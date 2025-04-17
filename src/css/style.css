@@ -1,0 +1,19 @@
+header{
+    padding: 10px 20px 30px 40px;
+    background-color: purple;
+    color: aliceblue;
+    border: 0;
+    
+}
+a{
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    color: aliceblue;
+}
+p{
+    display: block;
+    width: 500px;
+    height: 120px;
+    background-color: brown;
+}
