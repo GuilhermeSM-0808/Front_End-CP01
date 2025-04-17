@@ -1,8 +1,10 @@
 header{
-    padding: 10px 20px 30px 40px;
+    display: flex;
+    padding: 10px;
     background-color: purple;
     color: aliceblue;
-    border: 0;
+    justify-content: space-between;
+    align-items: center;
     
 }
 a{
