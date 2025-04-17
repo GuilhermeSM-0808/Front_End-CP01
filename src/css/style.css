@@ -100,3 +100,62 @@ footer ul li {
 #nav { 
     padding-left: 650px;
 }
+
+#bodyPag4 {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+#MainPag4 {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+#pPag4 {
+    margin-bottom: 20px;
+    background-color: white;
+  }
+ 
+#formPag4 {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none;
+  }
+
+button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+button:hover {
+    background-color: rgb(87, 5, 87);
+  }
