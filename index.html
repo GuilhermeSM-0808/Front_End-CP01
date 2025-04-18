@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
- <!-- Site referencia: https://www.w3schools.com/css/default.asp -->
+ <!-- Site informacao HMTL e CSS: https://www.w3schools.com/css/default.asp -->
+ <!-- Site de referencia: https://arinzano.com/#inicio-visitas -->
 
 <head>
     <meta charset="UTF-8">
@@ -13,36 +14,79 @@
 </head>
 
 <body>
-
     <header>
-        <h1>Agnello Vinharia</h1>
+        <h1>Agnello Vinheria</h1>
         
         <nav>
             <a href="./src/pages/pagina01.html">Chat IA</a>
             <a href="./src/pages/pagina02.html">Catalogo</a>
-            <a href="./src/pages/pagina03.html">Sobre</a>
-            <a href="./src/pages/pagina04.html">Contato</a>
+            <a href="./src/pages/pagina03.html">Produtores</a>
+            <a href="./src/pages/pagina04.html">Sobre</a>
         </nav>
         
     </header>
 
-    <main>
+    <div>
+        <iframe class="bg-video"
+        width="560" height="315" 
+        src="https://www.youtube.com/embed/Hj0dYfj55_8?si=6UpsTJrNbWQBroXs&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+        </iframe>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime officiis laudantium dignissimos reprehenderit doloribus doloremque? Eveniet obcaecati praesentium aperiam tempore corrupti nihil itaque et incidunt temporibus a nulla, dolorem velit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facilis quae minima iure culpa quibusdam libero explicabo corporis? Ex, molestias. Quia officia totam architecto, amet quibusdam, error, sapiente at possimus voluptate omnis quo adipisci quod voluptatem hic ex est quis ea rem nam repellendus? Autem ipsa tempore praesentium dolorem incidunt!</p>
+        <section>
+            <a href = "#resumo">Descubra</a>
+            <a href="#resumo"><img class = "arrow" src="./src/assets/img/Home_page_imgs/SimpleArrow.png" alt="Seta apontando para baixo"></a>
+        </section>
+
+    </div>
+
+    <main>
+        <section>    
+            <p id = "resumo">A Vinheria Agnello iniciou suas atividades em São Paulo há mais de 15 anos, contando com apenas uma loja física onde coloca à disposição do mercado uma vasta gama de rótulos de vinícolas nacionais e internacionais.</p>
+        </section>
+
+        <section>
+            <img src="./src/assets/img/Home_page_imgs/Vinheria_placeholder_01.jpg" alt="Interior da Loja do Agnello">
+
+        </section>
+
+        <section>
+            <p class = "textoapresentacao"><strong>Na nossa vinheria, cada garrafa conta uma história.</strong><br> <br>
+                Importamos vinhos dos quatro cantos do mundo para oferecer aos nossos clientes uma seleção verdadeiramente especial — rótulos que expressam o terroir, a tradição e a paixão de vinícolas renomadas da França, Itália, Argentina, Portugal, Chile, entre outras regiões vitivinícolas de destaque. <br> <br>
+                
+                Nosso compromisso é com a qualidade e a experiência. Buscamos pessoalmente produtores que respeitam o tempo, o solo e a uva, para que cada gole seja uma viagem sensorial autêntica. Queremos que você descubra o mundo através do vinho. <br> <br>
+                
+                Mas não paramos por aí. Também valorizamos e apoiamos os produtores nacionais, que vêm se destacando cada vez mais com vinhos surpreendentes e cheios de identidade. Nossa curadoria inclui vinhos brasileiros que nos enchem de orgulho, com sabores que representam o melhor do nosso terroir. <br> <br>
+                
+                Seja para um momento especial ou para o prazer do dia a dia, temos o vinho certo para acompanhar. Com carinho, conhecimento e respeito pela arte de fazer vinho, seguimos trazendo o melhor da uva até você.</p>
+        </section>
 
     </main>
 
+    <section>
+        <img class="endingimg" src="./src/assets/img/tuscan3.jpg" alt="Image de Vinhedo">
+    </section>
+
     <footer>
 
-        <ul>
-            <li>Contato</li>
+        <ul id="suporte">
+            <li>
+                Contato:
+                <li>+55 (11) 94800-5562</li>
+                <li>contato@agnello.com.br</li>
+            </li>
             <li>Suporte</li>
-            <li>Localizacao</li>
+            <li>
+                Localizacao:
+                <li>Av. Paulista, 1106 - 7º andar</li>
+            </li>
         </ul>
 
     </footer>
-    
 </body>
 
 </html>

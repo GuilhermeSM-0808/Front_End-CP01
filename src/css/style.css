@@ -1,39 +1,127 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(../assets/img/Vinheria_placeholder_01.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-        
+    background-color: #501D2E;
+
 }
+
+.bg-video {
+    position: absolute;
+    left: 0;
+    top: -5.5%;
+    background: cover no-repeat center;
+    user-select: none;
+    pointer-events: none;
+    height: 100%;
+    width: 177.77777778vh; 
+    min-width: 100%;
+    min-height: 56.25vw;
+    display: block;
+    z-index: -1;
+    
+}
+
 header{
     display: flex;
-    padding: 10px;
-    background-color: purple;
+    padding: 10px 20px 5px 50px;
+    background-color: #501D2E;
     color: aliceblue;
     justify-content: space-between;
     align-items: center;
     
 }
-main{
-    padding: 20px;
-    min-height: 100vh;
-    margin-bottom: 150px;
+header h1{
+    font-size: 42px;
 }
-a{
+header nav {
+    
+    padding-right: 20px;
+    
+}
+header nav a{
     display: inline-block;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     padding-left: 20px;
     color: aliceblue;
+    text-decoration: none;
+    
 }
+header nav a:hover{
+    color: orange;
+}
+div section a {
+    color: aliceblue;
+    font-style: italic;
+    font-size: 42px;
+    opacity: 0.8;
+    position: absolute;
+    left: 45.5%;
+    top: 36vw;
+}
+
+.arrow{
+    position: relative;
+    left: 55px;
+    top: 60px;
+    width: 55px;
+    z-index: 1;
+}
+
+main{
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 56vw;
+    min-height: 300vh;
+    margin-bottom: 150px;
+    z-index: 1;
+}
+
 p{
-    display: block;
-    width: 500px;
-    height: 120px;
-    background-color: brown;
+    font-size: 42px;
+    display: inline-block;
+    position: relative;
+    left: 400px;
+    align-items: center;
+    padding: 20px 5px 5px 30px;
+    width: 1000px;
+    height: 250px;
+    background-color: #6F2539;
+    color: aliceblue;
 }
+.textoapresentacao {
+    font-size: 32px;
+    background-color: #6F2539;
+    color: aliceblue;
+    text-align: justify;
+    
+
+    line-height: 130%;
+
+    border: 3px solid #2E101F;
+
+    display: inline-block;
+    position: static;
+    
+
+    padding: 20px 30px 5px 30px;
+
+    width: 95%;
+    height: 700px;
+}
+
+.endingimg{
+    position: absolute;
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+    top: 155vw;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
 footer{
-    background-color: purple;
+    background-color: #2E101F;
     color: aliceblue;
     text-align: center;
     padding: 20px;
@@ -43,8 +131,9 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 2;
 }
-footer ul li {
+footer #suporte li {
     list-style: none;
     display: inline-block;
     padding-left: 20px;
