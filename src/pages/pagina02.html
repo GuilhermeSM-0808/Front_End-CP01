@@ -1,26 +1,409 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinharia Agnello - Catalogo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/style.css">
+  <title>Catálogo de Vinhos - Vinheria Agnello</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fbeec1, #501D2E);
+      color: #333;
+      
+    }
+
+    header {
+      background-color: #501D2E;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      
+    }
+
+    .header-left {
+      flex: 1;
+    }
+
+    .header-left h1 {
+      margin: 0;
+      font-size: 42px;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+
+    .header-right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    .header-right a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .header-right a:hover {
+      color: #ffd700;
+    }
+    main {
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .vinho {
+      background-color: #fff5e6;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .vinho:hover {
+     transform: scale(1.03);
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .vinho img {
+     width: auto;
+     max-width: 100%;
+     height: auto;
+     max-height: 250px; 
+     display: block;
+     margin: 0 auto 10px;  
+    }
+    .vinho img:hover {
+     transform: scale(1.05);
+     transition: transform 0.3s ease;
+    }
+
+
+    .vinho h3 {
+      color: #800000;
+      margin-bottom: 5px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .vinho p {
+      margin: 5px 0;
+    }
+
+    .preco {
+      font-weight: bold;
+      color: #b12704;
+      font-size: 1.1em;
+    }
+    .botoes {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button.comprar, button.carrinho {
+    flex: 1;
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  max-width: 120px;
+}
+
+button.comprar:hover, button.carrinho:hover {
+  background-color: #b12704;
+}
+
+
+
+    footer {
+      text-align: center;
+      background-color: #2E101F;
+      color: white;
+      padding: 15px;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>Catalogo</h1>
-        
-        <nav>
-            <a href="./../../index.html">Home</a>
-            <a href="./pagina01.html">Chat IA</a>
-            <a href="./pagina03.html">Sobre</a>
-            <a href="./pagina04.html">Contato</a>
-        </nav>
-
+  <header>
+    <div class="header-left">
+        <h1>Agnello Vinheria - Catálogo</h1>
+      </div>
+      <div class="header-right">
+        <a href="./../../index.html">Home</a>
+        <a href="./pagina01.html">Chat IA</a>
+        <a href="./pagina03.html">Sobre</a>
+        <a href="./pagina04.html">Contato</a>
+      </div>
     </header>
-</body>
+    
+  <main>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/syrah.png" alt="Vinho Syrah">
+      <h3>Syrah</h3>
+      <p>Notas de especiarias e frutas negras.</p>
+      <p class="preco">R$ 84,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+        
+      </div>
+      
+      
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/Chardonnay.png" alt="Chardonnay">
+      <h3>Chardonnay</h3>
+      <p>Branco seco com notas de frutas tropicais.</p>
+      <p class="preco">R$ 74,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+      
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/SauvignonBlanc.png" alt="Sauvignon Blanc">
+      <h3>Sauvignon Blanc</h3>
+      <p>Refrescante, ideal para peixes e saladas.</p>
+      <p class="preco">R$ 64,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/malbec.png" alt="Malbec">
+      <h3>Malbec</h3>
+      <p>Intenso e aveludado, típico da Argentina.</p>
+      <p class="preco">R$ 82,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/zinfadel.png" alt="Zinfandel">
+      <h3>Zinfandel</h3>
+      <p>Americano, frutado e levemente adocicado.</p>
+      <p class="preco">R$ 77,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/rose.png" alt="Rosé">
+      <h3>Rosé</h3>
+      <p>Leve, refrescante e perfeito para o verão.</p>
+      <p class="preco">R$ 59,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/brut.png" alt="Espumante Brut">
+      <h3>Espumante Brut</h3>
+      <p>Seco e elegante, ideal para festas.</p>
+      <p class="preco">R$ 89,90</p>
+      <br>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/prosseco.png" alt="Prosecco">
+      <h3>Prosecco</h3>
+      <p>Italiano, leve e com borbulhas suaves.</p>
+      <p class="preco">R$ 72,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/porto.png" alt="Vinho do Porto">
+      <h3>Vinho do Porto</h3>
+      <p>Doce e encorpado, ótimo como digestivo.</p>
+      <p class="preco">R$ 94,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/icewine.png" alt="Ice Wine">
+      <h3>Ice Wine</h3>
+      <p>Raro e doce, feito de uvas congeladas.</p>
+      <p class="preco">R$ 109,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/lambrusco.png" alt="Lambrusco">
+      <h3>Lambrusco</h3>
+      <p>Espumante tinto italiano, leve e doce.</p>
+      <p class="preco">R$ 62,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/barbera.png" alt="Barbera">
+      <h3>Barbera</h3>
+      <p>Italiano, com acidez equilibrada e aroma frutado.</p>
+      <p class="preco">R$ 66,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/trempanillo.png" alt="Tempranillo">
+      <h3>Tempranillo</h3>
+      <p>Tradicional da Espanha, encorpado e seco.</p>
+      <p class="preco">R$ 79,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/Gewürztraminer.png" alt="Gewürztraminer">
+      <h3>Gewürztraminer</h3>
+      <p>Aromático e floral, excelente com pratos exóticos.</p>
+      <p class="preco">R$ 74,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/Riesling.png" alt="Riesling">
+      <h3>Riesling</h3>
+      <p>Branco alemão, doce ou seco com grande frescor.</p>
+      <p class="preco">R$ 68,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/Grenache.png" alt="Grenache">
+      <h3>Grenache</h3>
+      <p>Suave e frutado, bom para iniciantes.</p>
+      <p class="preco">R$ 63,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/PetitVerdot.png" alt="Petit Verdot">
+      <h3>Petit Verdot</h3>
+      <p>Escuro, denso e com boa acidez.</p>
+      <p class="preco">R$ 81,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/Carmenère.png" alt="Carmenère">
+      <h3>Carmenère</h3>
+      <p>Especialidade do Chile, herbáceo e macio.</p>
+      <p class="preco">R$ 73,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/Tannat.png" alt="Tannat">
+      <h3>Tannat</h3>
+      <p>Uruguaio, potente e ideal para churrascos.</p>
+      <p class="preco">R$ 78,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/verdelho.png" alt="Verdelho">
+      <h3>Verdelho</h3>
+      <p>Branco seco e leve, ideal para frutos do mar.</p>
+      <p class="preco">R$ 65,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+      <img src="../assets/img/catalogo/TourigaNacional.png" alt="Touriga Nacional">
+      <h3>Touriga Nacional</h3>
+      <p>Potente e complexo, típico de Portugal.</p>
+      <p class="preco">R$ 88,90</p>
+      <div class="botoes">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="vinho">
+        <img src="../assets/img/catalogo/Albariño.png" alt="Albariño">
+        <h3>Albariño</h3>
+        <p>Branco espanhol, fresco e aromático.</p>
+        <p class="preco">R$ 76,90</p>
+        <div class="botoes">
+            <button class="comprar">Comprar</button>
+            <button class="carrinho">Adicionar ao Carrinho</button>
+          </div>
+      </div>
+      <div class="vinho">
+        <img src="../assets/img/catalogo/Garnacha.png" alt="Garnacha">
+        <h3>Garnacha</h3>
+        <p>Frutado e suave, muito apreciado na Espanha.</p>
+        <p class="preco">R$ 69,90</p>
+        <div class="botoes">
+            <button class="comprar">Comprar</button>
+            <button class="carrinho">Adicionar ao Carrinho</button>
+          </div>
+      </div>
+      <div class="vinho">
+        <img src="..//assets/img/catalogo/Moscato.png" alt="Moscato">
+        <h3>Moscato</h3>
+        <p>Levemente doce, com notas florais e cítricas.</p>
+        <p class="preco">R$ 58,90</p>
+        <div class="botoes">
+            <button class="comprar">Comprar</button>
+            <button class="carrinho">Adicionar ao Carrinho</button>
+          </div>
+      </div>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 Vinheria Agnello. Todos os direitos reservados.</p>
+  </footer>
+  
+</body>
 </html>
