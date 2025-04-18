@@ -1,9 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     background-color: #501D2E;
     overflow-x: hidden;
-
 }
 
 .bg-video {
@@ -52,6 +55,9 @@ header nav a{
 }
 header nav a:hover{
     color: orange;
+    font-size: 22px;
+    padding-left: 32px;
+    padding-bottom: 2px;
 }
 div section a {
     color: aliceblue;
@@ -68,6 +74,7 @@ div section a {
     left: 55px;
     top: 60px;
     width: 55px;
+    height: 80px;
     z-index: 1;
 }
 
@@ -84,7 +91,7 @@ div section a {
     position: static;
     width: auto;
     height: 250px;
-    padding: 40px 500px 5px 500px;
+    padding: 3% 25% 0.5% 25%;
     margin-top: -150px;
 
     font-size: 36px;
