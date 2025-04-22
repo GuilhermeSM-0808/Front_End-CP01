@@ -344,51 +344,64 @@ footer #suporte li {
 }
 
 #nav { 
-    position: relative; 
-    bottom: -5px;
     padding-left: 650px;
-} 
+}
 
-#paragrafo { 
-    padding-left: 10px;
-} 
+#bodyPag4 {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
 
-#forms { 
-    position: relative;
-    top: -150px;
-    margin: 0px 0px 0px 300px;
-    width: 700px;
-    height: 450px;
-    border: solid 2px;
+#MainPag4 {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+#pPag4 {
+    margin-bottom: 20px;
+    background-color: white;
+  }
+ 
+#formPag4 {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
     display: block;
-}
-
-#nome {
-    width: 400px;
-    height: 20px;
     margin-bottom: 5px;
-    margin-left: 10px;
-} 
+    font-weight: bold;
+  }
 
-#opinioes {
-    max-width: 550px;
-    min-width: 549px;
-    min-height: 250px;
-    max-height: 300px;
-    margin-left: 10px;
-} 
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none;
+  }
 
-#botaoEnviar {
-    margin-left: 510px;
-}
+button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-#Agnelo {
-    width: 150px;
-    height: 50px;
-} 
 
-#sobre {
-    position: relative;
-    left: -50px;
-    bottom: -5px;
-} 
+button:hover {
+    background-color: rgb(87, 5, 87);
+  }
