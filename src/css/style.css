@@ -202,4 +202,53 @@ footer #suporte li {
     padding-left: 20px;
     justify-content: right;   
     align-items: right; 
+} 
+
+#h1 {
+    padding: 75px 0px 0px 600px;
+} 
+
+#h1_1 { 
+    padding-left: 615px;
+}
+
+#corpoPagina3 { 
+    background-image: none;
+    background-color: #ffffff;
+}
+
+#textNos { 
+    background-color: white; 
+    padding: 0px 0px 100px 440px;
+} 
+
+#melhorVinho { 
+    width: 245px; 
+    height: 285px; 
+    padding: 5px 0px 5px 300px;
+    display: inline; 
+
+} 
+
+.Henriques { 
+    background-color: purple; 
+    padding: 5px 0px 5px 0px ; 
+    
+}
+
+.SegMelhor { 
+    width: 245px; 
+    height: 285px;
+    padding: 10px 0px 0px 300px ;
+} 
+
+#descricaoVinho1 {
+    position: relative; 
+    top: -210px;
+    display: inline-block;
+    background-color: purple;
+}
+
+#nav { 
+    padding-left: 650px;
 }
