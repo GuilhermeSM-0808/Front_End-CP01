@@ -106,22 +106,22 @@ O arquivo `README.md` deve conter:
 
 ## ✅ Dica: use esse checklist!
 
-- [ ] 5 arquivos HTML criados
-- [ ] index.html com navegação para as demais páginas
-- [ ] Heading tags e parágrafos aplicados
-- [ ] Lista (ul ou ol) usada em pelo menos uma página
+- [X] 5 arquivos HTML criados
+- [X] index.html com navegação para as demais páginas
+- [X] Heading tags e parágrafos aplicados
+- [X] Lista (ul ou ol) usada em pelo menos uma página
 - [ ] Tabela HTML com conteúdo relevante
 - [ ] Formulário com input, textarea e botão
-- [ ] Tags semânticas aplicadas corretamente
+- [X] Tags semânticas aplicadas corretamente
 - [ ] Meta tags (`keywords`, `description`) em cada página
-- [ ] Estilos com CSS usando classes e ids
-- [ ] Box Model aplicado (margin, padding, border)
-- [ ] Algum elemento com `position` aplicado
+- [X] Estilos com CSS usando classes e ids
+- [x] Box Model aplicado (margin, padding, border)
+- [X] Algum elemento com `position` aplicado
 - [ ] Imagens em todas as páginas
-- [ ] Vídeo inserido
-- [ ] Menu de navegação funcional
+- [X] Vídeo inserido
+- [X] Menu de navegação funcional
 - [ ] Links internos e externos funcionando
-- [ ] Cada integrante com pelo menos 2 commits
+- [X] Cada integrante com pelo menos 2 commits
 - [ ] Projeto publicado no GitHub Pages
 - [ ] README completo com informações e links
 
