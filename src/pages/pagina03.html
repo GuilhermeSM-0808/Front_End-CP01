@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="Pagina03">
 
 <head>
     <meta charset="UTF-8">
@@ -10,13 +10,175 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <style>
-        h1 {
-            margin-top: 500px;
-        }
+#topoPag{
+    margin-top: -6px;
+    padding-top: 200px;
+    padding-left: 550px;
+}
+
+.textNos { 
+    padding: 0px 0px 0px 440px;
+    text-indent: 30px; 
+    display: block;
+    width: 550px;
+}  
+
+.textNos1 { 
+    padding: 0px 0px 0px 440px;
+    text-indent: 30px; 
+    display: block;
+    width: 550px;
+} 
+
+#producao {
+    position: relative; 
+    top: -485px;
+    left: 125px;
+    background-color: #ffff;
+    height: 0px;
+}
+
+#localProducao { 
+    position: relative; 
+    top: -250px ; 
+    left: 25px;
+    border-radius: 75px;
+}
+
+#Loja {
+    width: 300px; 
+    height: 250px;
+    position: relative; 
+    left: 1025px;
+    top: -500px; 
+    border-radius: 75px;
+}
+
+#nssLoja { 
+    position: relative; 
+    left: 1145px; 
+    top: -800px;
+}
+
+#mapa{ 
+    position: relative; 
+    top: -350px;
+}
+
+#melhorVinho { 
+    width: 245px; 
+    height: 285px; 
+    display: inline; 
+    padding: 18px 0px 0px 300px;
+} 
+
+#VinhoRec {
+    margin-left: 500px;
+}
+
+.Henriques { 
+    background-color: #501D2E;  
+    display: block;
+    width: 1100px;
+    height: 330px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    
+}
+
+.malhadinha-nova { 
+    background-color: #501D2E;  
+    display: block;
+    width: 1100px;
+    height: 330px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+} 
+
+.mirabilis { 
+    background-color: #501D2E;  
+    display: block;
+    width: 1100px;
+    height: 330px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.SegMelhor { 
+    width: 245px; 
+    height: 285px;
+    padding: 10px 0px 0px 300px ;
+} 
+
+.descricaoVinho1, .descricaoVinho2, .descricaoVinho3 {
+    text-indent: 30px;
+    position: relative; 
+    top: -250px;
+    margin-left: 550px;
+    display: inline-block;
+    background-color: #501D2E;
+    color: white;
+}
+
+.descricaoVinho11, .descricaoVinho22 {
+    text-indent: 30px;
+    position: relative; 
+    top: -282px; 
+    left: 550px;
+    display: inline-block;
+    background-color: #501D2E; 
+    margin-bottom: 10px;
+    width: 550px;
+    color: white;
+} 
+
+.descricaoVinho33{ 
+    text-indent: 30px;
+    position: relative; 
+    top: -300px; 
+    left: 550px;
+    display: inline-block;
+    background-color: #501D2E; 
+    margin-bottom: 10px;
+    width: 550px;
+    color: white;
+}
+
+.descricaoVinho333 { 
+    text-indent: 30px;
+    position: relative; 
+    top: -325px; 
+    left: 550px;
+    display: inline-block;
+    background-color: #501D2E; 
+    margin-bottom: 10px;
+    width: 550px;
+    color: white;
+}
+
+#nav { 
+    padding-left: 650px;
+}
+
+.saibaMais {
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+#Pagina03 {
+    overflow-x:hidden;
+    height: 2200px;
+}
+
+#Pagina003 {
+    overflow: hidden;
+    height: 2200px;
+}
+
     </style>
 </head>
 
-<body>
+<body id="Pagina003">
 
     <header>
         <div class="logo-container">
@@ -33,7 +195,7 @@
     </header>
 
     <section>
-        <h1>Um pouco sobre nós </h1>
+        <h1 id="topoPag">Um pouco sobre nós </h1>
         <p class="textNos">A nossa Vinheria, vinharia Agnelo, iniciou sua atividade na grande São Paulo há mais de 15
             anos,
             contando com apenas uma loja física onde coloca à disposição do mercado uma
@@ -48,12 +210,12 @@
             do Agnelo podemos oferecer uma gigantesca quantidade de vinhos. </p>
         <img id="localProducao" src="./../assets/img/localDeProdução.jpeg" alt="./../assets/img/localDeProdução.jpeg">
         <h4 id="producao">onde é produzido</h4>
-        <img id="Loja" src="./../assets/img/Vinheria_placeholder_03.jpg" alt="">
-        <h4 id="nssloja">Nossa loja </h4>
+        <img id="Loja" src="./../assets/img/Vinheria_placeholder_03.jpg" alt="./../assets/img/Vinheria_placeholder_03.jpg">
+        <h4 id="nssLoja">Nossa loja </h4>
 
 
         <map name="mapa" id="mapa">
-            <h1 id="h1">vinhos recomendados: </h1>
+            <h1 id="VinhoRec">vinhos recomendados:</h1>
             <article class="Henriques">
                 <img id="melhorVinho" src="./../assets/img/henriques-e-henriques.jpg"
                     alt="./../assets/img/henriques-e-henriques">
@@ -68,7 +230,9 @@
                     como Sercial, Verdelho, Bual (Boal) e Malvasia.
                     Temos os Henriques & Henriques medium rich madeira e full rich madeira.</p>
             </article>
-
+            <h3 class="saibaMais">Saiba mais sobre Henriques & Henriques: <a href="https://www.youtube.com/watch?v=nD3qb__Og_0">
+                <button>clique aqui</button>
+            </a></h3>
             <article class="mirabilis">
                 <img class="SegMelhor" src="./../assets/img/mirabilis.jpg" alt="./../assets/img/mirabilis.jpg">
                 <p class="descricaoVinho2">O Mirabilis é um vinho de autor produzido pela
@@ -84,7 +248,9 @@
                     que impressiona pela sofisticação e equilíbrio. Temos ambos os vinhos.</p>
             </article>
 
-            <br>
+            <h3 class="saibaMais">Saiba mais sobre Mirabilis: <a href="https://www.youtube.com/watch?v=TWkhZ3tKsYM">
+                <button>clique aqui</button>
+            </a></h3>
 
             <article class="malhadinha-nova">
                 <img class="SegMelhor" src="./../assets/img/malhadinha-nova.jpg"
@@ -101,15 +267,11 @@
                     nuances florais e toques sutis de barrica. Em boca, revela-se equilibrado,
                     volumoso, fresco e elegante, culminando em um final persistente.</p>
             </article>
-        </map>
+            <h3 id="ultimoSaibaMais">Saiba mais sobre Malhadinha Nova: <a href="https://www.youtube.com/watch?v=akwWMjDz8VQ">
+                <button>clique aqui</button>
+            </a></h3>
 
-        <form action='https://www.youtube.com/' method="post" id="forms">
-            <h3>Se quiser por alguma recomendação de vinhos, ou alguma reclamação coloque aqui:</h3>
-            <input type="text" id="nome" placeholder="ponha seu nome...">
-            <textarea name="opinioes" id="opinioes" placeholder="ponha seu comentario aqui..."></textarea>
-            <br>
-            <button id="botaoEnviar" type="submit">enviar</button>
-        </form>
+        </map>
 
     </section>
     <footer>
