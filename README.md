@@ -32,15 +32,27 @@ Front_End-CP01/
 ```
 ### Index page (Home Page)
 
-Pagina principal do site, apresentando
+Pagina principal do site com navegação para as outras paginas do site pelo Header e Footer. Na pagina é apresentado resumidamente informações sobre a vinheria, os vinhos que se encontram na loja, uma foto da loja e um video apresentando um vinhedo nacional no fundo.
 
 ### Pagina01 (Recomendações)
 
+Tabela de recomendações de vinhos, detalhendo tipo, sabor e preço.
+Navegação para outras paginas no Header.
+
 ### Pagina02 (Catalogo)
 
-### Pagina03 (Produtores)
+Lista de vinhos para compra em blocos, apresentando uma imagem da garaffa, um botao de adicionar o carinho e um de comprar dentro de cada bloco do vinho.
+Navegação para outras paginas no Header.
 
-### Pagina04 (Sobre/Contato)
+### Pagina03 (Sobre)
+
+Pagina contando informações sobre a loja e sobre produtores e vinhedos parceiros/fornecedores da loja.
+Navegação para outras paginas no Header.
+
+### Pagina04 (Contato)
+
+Paginá de contato, com um formulario pedindo Nome, email e por ultimo a mensagem para mandar para a loja.
+Navegação para outras paginas no Header.
 
 ---
 
