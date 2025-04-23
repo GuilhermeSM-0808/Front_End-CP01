@@ -131,6 +131,21 @@ div section a {
     z-index: -1;
 
 }
+
+.tabela-container {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-color: #501D2E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    align-items: center;
+
+}
+
 .vineleft02{
     position: absolute;
     mix-blend-mode: multiply;
