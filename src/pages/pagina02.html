@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" id="pagina02" >
+<html lang="pt-br" id="pagina02">
 
 <head>
     <meta charset="UTF-8">
@@ -8,44 +8,94 @@
     <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        #Pagina02 {
-            overflow:hidden;
-            height: 1670px;
-        }
-
-        #corpoP2 {
-            overflow-x:hidden;
-            height: 1670px;
-        }
-
         #principalR {
             display: flex;
             justify-content: center;
             align-items: center;
             align-self: center;
             padding: 40px 20px;
+            bottom: 0;
+            min-height: 80vh;
+            z-index: -1;
         }
-        
+
         #recomendacoes {
             width: 100%;
             border: 3px solid #501D2E;
             border-radius: 5px;
             color: black;
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            z-index: 2;
         }
-        
-        thead, tbody, th, td {
+
+        thead,
+        tbody,
+        th,
+        td {
             border: 1px solid #501D2E;
             padding: 10px;
             text-align: left;
             border-radius: 2px;
         }
-        
+
         th {
             background-color: #f3e5d7;
         }
+
+        #filtro {
+            font-size: large;
+            font-family: Arial, sans-serif;
+        }
+
+        #filtroTipo {
+            font-size: large;
+            font-family: Arial, sans-serif;
+        }
+
+        #preco {
+            margin-left: 380px;
+        }
+
+        #imagem1 {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            margin-right: 75%;
+
+        }
+
+        #imagem2 {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            margin-left: 75%;
+        }
+
+        #imagem-direita,
+        #imagem-esquerda {
+            overflow: hidden;
+            height: 85vh;
+            filter: sepia(100%) brightness(80%) contrast(100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        #imagem-direita {
+            float: right;
+            margin: 10px;
+            width: 300px;
+        }
+
+        #imagem-esquerda {
+            float: left;
+            margin: 10px;
+            width: 300px;
+        }
     </style>
 </head>
-
 
 <body id="corpoP2">
     <header>
@@ -64,57 +114,242 @@
     </header>
 
     <main id="principalR">
-        <div></div>
+        <div id="imagem1"><img id="imagem-esquerda"
+                src="../assets/img/Recomendações/uma-vista-deslumbrante-da-vinha-com-videiras-e-natureza_23-2151514868.jpg"
+                alt="vinho"></div>
         <div class="tabela-container">
+            <label id="filtro" for="filtroTipo">Filtrar por tipo:</label>
+            <select id="filtroTipo" onchange="filtrarPorTipo()">
+                <option value="">Todos</option>
+                <option value="tinto">Tinto</option>
+                <option value="branco">Branco</option>
+                <option value="rose">Rose</option>
+                <option value="espumante">Espumante</option>
+                <option value="doce">Doce</option>
+            </select>
+
+            <button id="preco" onclick="ordenarPorPreco()">Ordenar por Preço</button>
             <table id="recomendacoes" cellpadding="8" cellspacing="0">
                 <thead>
-                  <tr>
-                    <th>Nome</th>
-                    <th>Tipo</th>
-                    <th>Descrição</th>
-                    <th>Preço</th>
-                  </tr>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Syrah</td><td>tinto</td><td>Notas de especiarias e frutas negras.</td><td>R$ 84,90</td></tr>
-                  <tr><td>Chardonnay</td><td>branco</td><td>Branco seco com notas de frutas tropicais.</td><td>R$ 74,90</td></tr>
-                  <tr><td>Sauvignon Blanc</td><td>branco</td><td>Refrescante, ideal para peixes e saladas.</td><td>R$ 64,90</td></tr>
-                  <tr><td>Malbec</td><td>tinto</td><td>Intenso e aveludado, típico da Argentina.</td><td>R$ 82,90</td></tr>
-                  <tr><td>Zinfandel</td><td>tinto</td><td>Americano, frutado e levemente adocicado.</td><td>R$ 77,90</td></tr>
-                  <tr><td>Rosé</td><td>rose</td><td>Leve, refrescante e perfeito para o verão.</td><td>R$ 59,90</td></tr>
-                  <tr><td>Espumante Brut</td><td>espumante</td><td>Seco e elegante, ideal para festas.</td><td>R$ 89,90</td></tr>
-                  <tr><td>Prosecco</td><td>espumante</td><td>Italiano, leve e com borbulhas suaves.</td><td>R$ 72,90</td></tr>
-                  <tr><td>Vinho do Porto</td><td>doce</td><td>Doce e encorpado, ótimo como digestivo.</td><td>R$ 94,90</td></tr>
-                  <tr><td>Ice Wine</td><td>doce</td><td>Raro e doce, feito de uvas congeladas.</td><td>R$ 109,90</td></tr>
-                  <tr><td>Lambrusco</td><td>espumante</td><td>Espumante tinto italiano, leve e doce.</td><td>R$ 62,90</td></tr>
-                  <tr><td>Barbera</td><td>tinto</td><td>Italiano, com acidez equilibrada e aroma frutado.</td><td>R$ 66,90</td></tr>
-                  <tr><td>Tempranillo</td><td>tinto</td><td>Tradicional da Espanha, encorpado e seco.</td><td>R$ 79,90</td></tr>
-                  <tr><td>Gewürztraminer</td><td>branco</td><td>Aromático e floral, excelente com pratos exóticos.</td><td>R$ 74,90</td></tr>
-                  <tr><td>Riesling</td><td>branco</td><td>Branco alemão, doce ou seco com grande frescor.</td><td>R$ 68,90</td></tr>
-                  <tr><td>Grenache</td><td>tinto</td><td>Suave e frutado, bom para iniciantes.</td><td>R$ 63,90</td></tr>
-                  <tr><td>Petit Verdot</td><td>tinto</td><td>Escuro, denso e com boa acidez.</td><td>R$ 81,90</td></tr>
-                  <tr><td>Carmenère</td><td>tinto</td><td>Especialidade do Chile, herbáceo e macio.</td><td>R$ 73,90</td></tr>
-                  <tr><td>Tannat</td><td>tinto</td><td>Uruguaio, potente e ideal para churrascos.</td><td>R$ 78,90</td></tr>
-                  <tr><td>Verdelho</td><td>branco</td><td>Branco seco e leve, ideal para frutos do mar.</td><td>R$ 65,90</td></tr>
-                  <tr><td>Touriga Nacional</td><td>tinto</td><td>Potente e complexo, típico de Portugal.</td><td>R$ 88,90</td></tr>
-                  <tr><td>Albariño</td><td>branco</td><td>Branco espanhol, fresco e aromático.</td><td>R$ 76,90</td></tr>
-                  <tr><td>Garnacha</td><td>tinto</td><td>Frutado e suave, muito apreciado na Espanha.</td><td>R$ 69,90</td></tr>
-                  <tr><td>Moscato</td><td>doce</td><td>Frutado e suave, muito apreciado na Espanha.</td><td>R$ 58,90</td></tr>
-                  <tr><td>Bordeaux</td><td>tinto</td><td>Frutado e suave, muito apreciado na Espanha.</td><td>R$ 92,90</td></tr>
-                  <tr><td>Pinot Noir</td><td>tinto</td><td>Leve, frutado e delicado, ideal para iniciantes.</td><td>R$ 81,90</td></tr>
-                  <tr><td>Cabernet Franc</td><td>tinto</td><td>Notas herbáceas e frutas vermelhas</td><td>R$ 84,00</td></tr>
-                  <tr><td>Rosso di Montalcino</td><td>tinto</td><td>Italiano, seco com taninos leves.</td><td>R$ 88,90</td></tr>
-                  <tr><td>Dolcetto</td><td>tinto</td><td>Tinto italiano leve e frutado.</td><td>R$ 72,90</td></tr>
-                  <tr><td>Barolo</td><td>tinto</td><td>Italiano encorpado, com grande complexidade.</td><td>R$ 124,90</td></tr>
-                  <tr><td>Frascati</td><td>branco</td><td>Branco leve e refrescante de Roma.</td><td>R$ 67,90</td></tr>
-                  <tr><td>Trebbiano</td><td>branco</td><td>Branco italiano com leve acidez.</td><td>R$ 59,90</td></tr>
-                  <tr><td>Vernaccia</td><td>branco</td><td>Branco toscano com notas minerais.</td><td>R$ 74,90</td></tr>
-                  <tr><td>Tokaji</td><td>doce</td><td>Doce húngaro tradicional e nobre.</td><td>R$ 139,90</td></tr>
+                    <tr>
+                        <td>Syrah</td>
+                        <td>tinto</td>
+                        <td>Notas de especiarias e frutas negras.</td>
+                        <td>R$ 84,90</td>
+                    </tr>
+                    <tr>
+                        <td>Chardonnay</td>
+                        <td>branco</td>
+                        <td>Branco seco com notas de frutas tropicais.</td>
+                        <td>R$ 74,90</td>
+                    </tr>
+                    <tr>
+                        <td>Sauvignon Blanc</td>
+                        <td>branco</td>
+                        <td>Refrescante, ideal para peixes e saladas.</td>
+                        <td>R$ 64,90</td>
+                    </tr>
+                    <tr>
+                        <td>Malbec</td>
+                        <td>tinto</td>
+                        <td>Intenso e aveludado, típico da Argentina.</td>
+                        <td>R$ 82,90</td>
+                    </tr>
+                    <tr>
+                        <td>Zinfandel</td>
+                        <td>tinto</td>
+                        <td>Americano, frutado e levemente adocicado.</td>
+                        <td>R$ 77,90</td>
+                    </tr>
+                    <tr>
+                        <td>Rosé</td>
+                        <td>rose</td>
+                        <td>Leve, refrescante e perfeito para o verão.</td>
+                        <td>R$ 59,90</td>
+                    </tr>
+                    <tr>
+                        <td>Espumante Brut</td>
+                        <td>espumante</td>
+                        <td>Seco e elegante, ideal para festas.</td>
+                        <td>R$ 89,90</td>
+                    </tr>
+                    <tr>
+                        <td>Prosecco</td>
+                        <td>espumante</td>
+                        <td>Italiano, leve e com borbulhas suaves.</td>
+                        <td>R$ 72,90</td>
+                    </tr>
+                    <tr>
+                        <td>Vinho do Porto</td>
+                        <td>doce</td>
+                        <td>Doce e encorpado, ótimo como digestivo.</td>
+                        <td>R$ 94,90</td>
+                    </tr>
+                    <tr>
+                        <td>Ice Wine</td>
+                        <td>doce</td>
+                        <td>Raro e doce, feito de uvas congeladas.</td>
+                        <td>R$ 109,90</td>
+                    </tr>
+                    <tr>
+                        <td>Lambrusco</td>
+                        <td>espumante</td>
+                        <td>Espumante tinto italiano, leve e doce.</td>
+                        <td>R$ 62,90</td>
+                    </tr>
+                    <tr>
+                        <td>Barbera</td>
+                        <td>tinto</td>
+                        <td>Italiano, com acidez equilibrada e aroma frutado.</td>
+                        <td>R$ 66,90</td>
+                    </tr>
+                    <tr>
+                        <td>Tempranillo</td>
+                        <td>tinto</td>
+                        <td>Tradicional da Espanha, encorpado e seco.</td>
+                        <td>R$ 79,90</td>
+                    </tr>
+                    <tr>
+                        <td>Gewürztraminer</td>
+                        <td>branco</td>
+                        <td>Aromático e floral, excelente com pratos exóticos.</td>
+                        <td>R$ 74,90</td>
+                    </tr>
+                    <tr>
+                        <td>Riesling</td>
+                        <td>branco</td>
+                        <td>Branco alemão, doce ou seco com grande frescor.</td>
+                        <td>R$ 68,90</td>
+                    </tr>
+                    <tr>
+                        <td>Grenache</td>
+                        <td>tinto</td>
+                        <td>Suave e frutado, bom para iniciantes.</td>
+                        <td>R$ 63,90</td>
+                    </tr>
+                    <tr>
+                        <td>Petit Verdot</td>
+                        <td>tinto</td>
+                        <td>Escuro, denso e com boa acidez.</td>
+                        <td>R$ 81,90</td>
+                    </tr>
+                    <tr>
+                        <td>Carmenère</td>
+                        <td>tinto</td>
+                        <td>Especialidade do Chile, herbáceo e macio.</td>
+                        <td>R$ 73,90</td>
+                    </tr>
+                    <tr>
+                        <td>Tannat</td>
+                        <td>tinto</td>
+                        <td>Uruguaio, potente e ideal para churrascos.</td>
+                        <td>R$ 78,90</td>
+                    </tr>
+                    <tr>
+                        <td>Verdelho</td>
+                        <td>branco</td>
+                        <td>Branco seco e leve, ideal para frutos do mar.</td>
+                        <td>R$ 65,90</td>
+                    </tr>
+                    <tr>
+                        <td>Touriga Nacional</td>
+                        <td>tinto</td>
+                        <td>Potente e complexo, típico de Portugal.</td>
+                        <td>R$ 88,90</td>
+                    </tr>
+                    <tr>
+                        <td>Albariño</td>
+                        <td>branco</td>
+                        <td>Branco espanhol, fresco e aromático.</td>
+                        <td>R$ 76,90</td>
+                    </tr>
+                    <tr>
+                        <td>Garnacha</td>
+                        <td>tinto</td>
+                        <td>Frutado e suave, muito apreciado na Espanha.</td>
+                        <td>R$ 69,90</td>
+                    </tr>
+                    <tr>
+                        <td>Moscato</td>
+                        <td>doce</td>
+                        <td>Frutado e suave, muito apreciado na Espanha.</td>
+                        <td>R$ 58,90</td>
+                    </tr>
+                    <tr>
+                        <td>Bordeaux</td>
+                        <td>tinto</td>
+                        <td>Frutado e suave, muito apreciado na Espanha.</td>
+                        <td>R$ 92,90</td>
+                    </tr>
+                    <tr>
+                        <td>Pinot Noir</td>
+                        <td>tinto</td>
+                        <td>Leve, frutado e delicado, ideal para iniciantes.</td>
+                        <td>R$ 81,90</td>
+                    </tr>
+                    <tr>
+                        <td>Cabernet Franc</td>
+                        <td>tinto</td>
+                        <td>Notas herbáceas e frutas vermelhas</td>
+                        <td>R$ 84,00</td>
+                    </tr>
+                    <tr>
+                        <td>Rosso di Montalcino</td>
+                        <td>tinto</td>
+                        <td>Italiano, seco com taninos leves.</td>
+                        <td>R$ 88,90</td>
+                    </tr>
+                    <tr>
+                        <td>Dolcetto</td>
+                        <td>tinto</td>
+                        <td>Tinto italiano leve e frutado.</td>
+                        <td>R$ 72,90</td>
+                    </tr>
+                    <tr>
+                        <td>Barolo</td>
+                        <td>tinto</td>
+                        <td>Italiano encorpado, com grande complexidade.</td>
+                        <td>R$ 124,90</td>
+                    </tr>
+                    <tr>
+                        <td>Frascati</td>
+                        <td>branco</td>
+                        <td>Branco leve e refrescante de Roma.</td>
+                        <td>R$ 67,90</td>
+                    </tr>
+                    <tr>
+                        <td>Trebbiano</td>
+                        <td>branco</td>
+                        <td>Branco italiano com leve acidez.</td>
+                        <td>R$ 59,90</td>
+                    </tr>
+                    <tr>
+                        <td>Vernaccia</td>
+                        <td>branco</td>
+                        <td>Branco toscano com notas minerais.</td>
+                        <td>R$ 74,90</td>
+                    </tr>
+                    <tr>
+                        <td>Tokaji</td>
+                        <td>doce</td>
+                        <td>Doce húngaro tradicional e nobre.</td>
+                        <td>R$ 139,90</td>
+                    </tr>
                 </tbody>
-              </table>                            
+            </table>
         </div>
-        <div></div>
-    </main>    
+        <div id="imagem2"><img id="imagem-esquerda"
+                src="../assets/img/Recomendações/uma-vista-deslumbrante-da-vinha-com-videiras-e-natureza_23-2151514868.jpg"
+                alt="vinho"></div>
+    </main>
 
     <footer>
         <ul class="suporte">
@@ -130,6 +365,34 @@
             </li>
         </ul>
     </footer>
+    <script>
+        let ordemCrescente = true;
+
+        function filtrarPorTipo() {
+            const tipoSelecionado = document.getElementById("filtroTipo").value.toLowerCase();
+            const linhas = document.querySelectorAll("#recomendacoes tbody tr");
+
+            linhas.forEach(linha => {
+                const tipo = linha.cells[1].textContent.toLowerCase();
+                linha.style.display = (!tipoSelecionado || tipo === tipoSelecionado) ? "" : "none";
+            });
+        }
+
+        function ordenarPorPreco() {
+            const tabela = document.getElementById("recomendacoes").getElementsByTagName("tbody")[0];
+            const linhas = Array.from(tabela.getElementsByTagName("tr"));
+
+            linhas.sort((a, b) => {
+                const precoA = parseFloat(a.cells[3].textContent.replace("R$", "").replace(",", "."));
+                const precoB = parseFloat(b.cells[3].textContent.replace("R$", "").replace(",", "."));
+
+                return ordemCrescente ? precoA - precoB : precoB - precoA;
+            });
+
+            linhas.forEach(linha => tabela.appendChild(linha)); // reanexa na nova ordem
+            ordemCrescente = !ordemCrescente;
+        }
+    </script>
 </body>
 
 </html>

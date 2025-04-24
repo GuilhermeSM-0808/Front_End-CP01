@@ -8,9 +8,41 @@
     <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        header,
-        footer {
-            position: static;
+        #imagem1 {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            margin-right: 75%;
+
+        }
+
+        #imagem2 {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            margin-left: 75%;
+        }
+
+        #imagem-direita,
+        #imagem-esquerda {
+            overflow: hidden;
+            height: 60vh;
+            filter: sepia(100%) brightness(80%) contrast(100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        #imagem-direita {
+            float: right;
+            margin: 10px;
+            width: 300px;
+        }
+
+        #imagem-esquerda {
+            float: left;
+            margin: 10px;
+            width: 300px;
         }
     </style>
 </head>
@@ -33,6 +65,7 @@
     </header>
     <section>
         <main id="MainPag4">
+            <div id="imagem1"><img id="imagem-direita" src="../assets/img/Contato/OIP.jpg" alt="vinho"></div>
             <h2>Fale conosco</h2>
             <p id="pPag4">Tem dúvidas ou quer falar sobre vinhos? Mande uma mensagem!</p>
             <form id="formPag4">
@@ -47,6 +80,7 @@
 
                 <button type="submit">Enviar</button>
             </form>
+            <div id="imagem2"><img id="imagem-esquerda" src="../assets/img/Contato/OIP.jpg" alt="vinho"></div>
         </main>
     </section>
     <footer>
