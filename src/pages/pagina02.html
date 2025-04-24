@@ -54,20 +54,19 @@
             font-family: Arial, sans-serif;
         }
 
-        #preco {
+        button {
             margin-left: 380px;
         }
 
-        #imagem1 {
+        .imagem1 {
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
             display: block;
             margin-right: 75%;
-
         }
 
-        #imagem2 {
+        .imagem2 {
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
@@ -75,23 +74,12 @@
             margin-left: 75%;
         }
 
-        #imagem-direita,
-        #imagem-esquerda {
+        .imagem-direita,
+        .imagem-esquerda {
             overflow: hidden;
             height: 85vh;
             filter: sepia(100%) brightness(80%) contrast(100%);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        }
-
-        #imagem-direita {
-            float: right;
-            margin: 10px;
-            width: 300px;
-        }
-
-        #imagem-esquerda {
-            float: left;
-            margin: 10px;
             width: 300px;
         }
     </style>
@@ -114,7 +102,7 @@
     </header>
 
     <main id="principalR">
-        <div id="imagem1"><img id="imagem-esquerda"
+        <div class="imagem1"><img class="imagem-esquerda"
                 src="../assets/img/Recomendações/uma-vista-deslumbrante-da-vinha-com-videiras-e-natureza_23-2151514868.jpg"
                 alt="vinho"></div>
         <div class="tabela-container">
@@ -128,7 +116,7 @@
                 <option value="doce">Doce</option>
             </select>
 
-            <button id="preco" onclick="ordenarPorPreco()">Ordenar por Preço</button>
+            <button onclick="ordenarPorPreco()">Ordenar por Preço</button>
             <table id="recomendacoes" cellpadding="8" cellspacing="0">
                 <thead>
                     <tr>
@@ -346,23 +334,17 @@
                 </tbody>
             </table>
         </div>
-        <div id="imagem2"><img id="imagem-esquerda"
+        <div class="imagem2"><img class="imagem-esquerda"
                 src="../assets/img/Recomendações/uma-vista-deslumbrante-da-vinha-com-videiras-e-natureza_23-2151514868.jpg"
                 alt="vinho"></div>
     </main>
 
     <footer>
         <ul class="suporte">
-            <li>
-                Contato:
-            <li>+55 (11) 94800-5562</li>
-            <li>contato@agnello.com.br</li>
-            </li>
-            <li>Suporte</li>
-            <li>
-                Localização:
-            <li>Av. Paulista, 1106 - 7º andar</li>
-            </li>
+            <li>Contato: +55 (11) 94800-5562</li>
+            <li>E-mail: contato@agnello.com.br</li>
+            <li><a class="linkSup" href="./pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
+            <li><a class="linkLocal"href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
         </ul>
     </footer>
     <script>

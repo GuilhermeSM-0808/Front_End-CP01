@@ -5,6 +5,8 @@ html{
 body{
     margin: 0;
     padding: 0;
+    bottom: 0;
+    top: 0;
     overflow-x: hidden;
     font-family: Arial, sans-serif;
     background: linear-gradient(100deg, #dabc7c, #501D2E);
@@ -45,6 +47,7 @@ header{
     align-items: center;
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 10;
 }
 header h1{
@@ -172,25 +175,6 @@ div section a {
     margin-top: 120px;
 }
 
-.textoapresentacao {
-    font-size: 24px;
-    background-color: #6F2539;
-    color: aliceblue;
-    text-align: justify;
-    line-height: 130%;
-    border: 3px solid #2E101F;
-
-    display: block;
-    position: absolute;
-    margin-top: auto;
-
-    width: 50%;
-    height: 700px;
-    padding: 20px 30px 5px 30px;
-    
-    overflow: auto;
-}
-
 .fotoloja {
     position: absolute;
     display: inline;
@@ -236,62 +220,34 @@ footer .suporte li {
     bottom: 0; 
 } 
 
-
-#bodyPag4 {
-    font-family: Arial, sans-serif;
-    background-color: #f8f4f0;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-
-#MainPag4 {
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-  }
-#pPag4 {
-    margin-bottom: 20px;
-    background-color: white;
-  }
- 
-#formPag4 {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    display: block;
-    margin-bottom: 5px;
+.linkSup,
+.linkLocal{
+    color: aliceblue;
     font-weight: bold;
-  }
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    text-decoration: underline;
     font-size: 16px;
-    box-sizing: border-box;
-    resize: none;
-  }
+    line-height: 150%;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.linkSup:hover,
+.linkLocal:hover{
+    color: orange;
+}
 
 button {
-    background-color: purple;
-    color: white;
+    background-color: #501D2E;
+    transition: background-color 0.3s ease-in;
+    color: aliceblue;
+    font-weight: bold;
     border: none;
     padding: 12px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-
+}
 
 button:hover {
-    background-color: rgb(87, 5, 87);
-  }
+    background-color: #7A2F45;
+}
