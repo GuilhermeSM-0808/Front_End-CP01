@@ -117,222 +117,141 @@
             </select>
 
             <button onclick="ordenarPorPreco()">Ordenar por Preço</button>
-            <table id="recomendacoes" cellpadding="8" cellspacing="0">
+            <table id="recomendacoes" cellpadding="40" cellspacing="0">
                 <thead>
                     <tr>
                         <th>Nome</th>
                         <th>Tipo</th>
+                        <th>País</th>
                         <th>Descrição</th>
+                        <th>Vendas</th>
                         <th>Preço</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Syrah</td>
+                        <td>Cabernet Sauvignon</td>
                         <td>tinto</td>
-                        <td>Notas de especiarias e frutas negras.</td>
-                        <td>R$ 84,90</td>
+                        <td>França</td>
+                        <td>Encorpado, com notas de frutas escuras e taninos marcantes.</td>
+                        <td>12.000</td>
+                        <td>R$ 89,90</td>
                     </tr>
                     <tr>
-                        <td>Chardonnay</td>
+                        <td>Merlot</td>
+                        <td>tinto</td>
+                        <td>França</td>
+                        <td>Macio e aveludado, com sabores de frutas vermelhas.</td>
+                        <td>9.500</td>
+                        <td>R$ 79,90</td>
+                    </tr>
+                    <tr>
+                        <td>Pinot Grigio</td>
                         <td>branco</td>
-                        <td>Branco seco com notas de frutas tropicais.</td>
-                        <td>R$ 74,90</td>
-                    </tr>
-                    <tr>
-                        <td>Sauvignon Blanc</td>
-                        <td>branco</td>
-                        <td>Refrescante, ideal para peixes e saladas.</td>
-                        <td>R$ 64,90</td>
-                    </tr>
-                    <tr>
-                        <td>Malbec</td>
-                        <td>tinto</td>
-                        <td>Intenso e aveludado, típico da Argentina.</td>
-                        <td>R$ 82,90</td>
-                    </tr>
-                    <tr>
-                        <td>Zinfandel</td>
-                        <td>tinto</td>
-                        <td>Americano, frutado e levemente adocicado.</td>
-                        <td>R$ 77,90</td>
+                        <td>Itália</td>
+                        <td>Fresco e leve, ideal para dias quentes.</td>
+                        <td>8.700</td>
+                        <td>R$ 69,90</td>
                     </tr>
                     <tr>
                         <td>Rosé</td>
                         <td>rose</td>
+                        <td>França</td>
                         <td>Leve, refrescante e perfeito para o verão.</td>
+                        <td>11.300</td>
                         <td>R$ 59,90</td>
-                    </tr>
-                    <tr>
-                        <td>Espumante Brut</td>
-                        <td>espumante</td>
-                        <td>Seco e elegante, ideal para festas.</td>
-                        <td>R$ 89,90</td>
-                    </tr>
-                    <tr>
-                        <td>Prosecco</td>
-                        <td>espumante</td>
-                        <td>Italiano, leve e com borbulhas suaves.</td>
-                        <td>R$ 72,90</td>
-                    </tr>
-                    <tr>
-                        <td>Vinho do Porto</td>
-                        <td>doce</td>
-                        <td>Doce e encorpado, ótimo como digestivo.</td>
-                        <td>R$ 94,90</td>
-                    </tr>
-                    <tr>
-                        <td>Ice Wine</td>
-                        <td>doce</td>
-                        <td>Raro e doce, feito de uvas congeladas.</td>
-                        <td>R$ 109,90</td>
-                    </tr>
-                    <tr>
-                        <td>Lambrusco</td>
-                        <td>espumante</td>
-                        <td>Espumante tinto italiano, leve e doce.</td>
-                        <td>R$ 62,90</td>
-                    </tr>
-                    <tr>
-                        <td>Barbera</td>
-                        <td>tinto</td>
-                        <td>Italiano, com acidez equilibrada e aroma frutado.</td>
-                        <td>R$ 66,90</td>
-                    </tr>
-                    <tr>
-                        <td>Tempranillo</td>
-                        <td>tinto</td>
-                        <td>Tradicional da Espanha, encorpado e seco.</td>
-                        <td>R$ 79,90</td>
-                    </tr>
-                    <tr>
-                        <td>Gewürztraminer</td>
-                        <td>branco</td>
-                        <td>Aromático e floral, excelente com pratos exóticos.</td>
-                        <td>R$ 74,90</td>
-                    </tr>
-                    <tr>
-                        <td>Riesling</td>
-                        <td>branco</td>
-                        <td>Branco alemão, doce ou seco com grande frescor.</td>
-                        <td>R$ 68,90</td>
-                    </tr>
-                    <tr>
-                        <td>Grenache</td>
-                        <td>tinto</td>
-                        <td>Suave e frutado, bom para iniciantes.</td>
-                        <td>R$ 63,90</td>
-                    </tr>
-                    <tr>
-                        <td>Petit Verdot</td>
-                        <td>tinto</td>
-                        <td>Escuro, denso e com boa acidez.</td>
-                        <td>R$ 81,90</td>
-                    </tr>
-                    <tr>
-                        <td>Carmenère</td>
-                        <td>tinto</td>
-                        <td>Especialidade do Chile, herbáceo e macio.</td>
-                        <td>R$ 73,90</td>
-                    </tr>
-                    <tr>
-                        <td>Tannat</td>
-                        <td>tinto</td>
-                        <td>Uruguaio, potente e ideal para churrascos.</td>
-                        <td>R$ 78,90</td>
-                    </tr>
-                    <tr>
-                        <td>Verdelho</td>
-                        <td>branco</td>
-                        <td>Branco seco e leve, ideal para frutos do mar.</td>
-                        <td>R$ 65,90</td>
-                    </tr>
-                    <tr>
-                        <td>Touriga Nacional</td>
-                        <td>tinto</td>
-                        <td>Potente e complexo, típico de Portugal.</td>
-                        <td>R$ 88,90</td>
-                    </tr>
-                    <tr>
-                        <td>Albariño</td>
-                        <td>branco</td>
-                        <td>Branco espanhol, fresco e aromático.</td>
-                        <td>R$ 76,90</td>
-                    </tr>
-                    <tr>
-                        <td>Garnacha</td>
-                        <td>tinto</td>
-                        <td>Frutado e suave, muito apreciado na Espanha.</td>
-                        <td>R$ 69,90</td>
                     </tr>
                     <tr>
                         <td>Moscato</td>
                         <td>doce</td>
+                        <td>Itália</td>
                         <td>Frutado e suave, muito apreciado na Espanha.</td>
+                        <td>10.800</td>
                         <td>R$ 58,90</td>
                     </tr>
                     <tr>
                         <td>Bordeaux</td>
                         <td>tinto</td>
+                        <td>França</td>
                         <td>Frutado e suave, muito apreciado na Espanha.</td>
+                        <td>7.600</td>
                         <td>R$ 92,90</td>
                     </tr>
                     <tr>
                         <td>Pinot Noir</td>
                         <td>tinto</td>
+                        <td>França</td>
                         <td>Leve, frutado e delicado, ideal para iniciantes.</td>
+                        <td>9.000</td>
                         <td>R$ 81,90</td>
                     </tr>
                     <tr>
                         <td>Cabernet Franc</td>
                         <td>tinto</td>
+                        <td>França</td>
                         <td>Notas herbáceas e frutas vermelhas</td>
+                        <td>6.900</td>
                         <td>R$ 84,00</td>
                     </tr>
                     <tr>
                         <td>Rosso di Montalcino</td>
                         <td>tinto</td>
+                        <td>Itália</td>
                         <td>Italiano, seco com taninos leves.</td>
+                        <td>5.200</td>
                         <td>R$ 88,90</td>
                     </tr>
                     <tr>
                         <td>Dolcetto</td>
                         <td>tinto</td>
+                        <td>Itália</td>
                         <td>Tinto italiano leve e frutado.</td>
+                        <td>4.800</td>
                         <td>R$ 72,90</td>
                     </tr>
                     <tr>
                         <td>Barolo</td>
                         <td>tinto</td>
+                        <td>Itália</td>
                         <td>Italiano encorpado, com grande complexidade.</td>
+                        <td>6.100</td>
                         <td>R$ 124,90</td>
                     </tr>
                     <tr>
                         <td>Frascati</td>
                         <td>branco</td>
+                        <td>Itália</td>
                         <td>Branco leve e refrescante de Roma.</td>
+                        <td>3.500</td>
                         <td>R$ 67,90</td>
                     </tr>
                     <tr>
                         <td>Trebbiano</td>
                         <td>branco</td>
+                        <td>Itália</td>
                         <td>Branco italiano com leve acidez.</td>
+                        <td>4.000</td>
                         <td>R$ 59,90</td>
                     </tr>
                     <tr>
                         <td>Vernaccia</td>
                         <td>branco</td>
+                        <td>Itália</td>
                         <td>Branco toscano com notas minerais.</td>
+                        <td>4.600</td>
                         <td>R$ 74,90</td>
                     </tr>
                     <tr>
                         <td>Tokaji</td>
                         <td>doce</td>
+                        <td>Hungria</td>
                         <td>Doce húngaro tradicional e nobre.</td>
+                        <td>3.300</td>
                         <td>R$ 139,90</td>
                     </tr>
                 </tbody>
             </table>
+
         </div>
         <div class="imagem2"><img class="imagem-esquerda"
                 src="../assets/img/Recomendações/uma-vista-deslumbrante-da-vinha-com-videiras-e-natureza_23-2151514868.jpg"
@@ -344,7 +263,7 @@
             <li>Contato: +55 (11) 94800-5562</li>
             <li>E-mail: contato@agnello.com.br</li>
             <li><a class="linkSup" href="./pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
-            <li><a class="linkLocal"href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
+            <li><a class="linkLocal" href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
         </ul>
     </footer>
     <script>
