@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+        content="Entre em contato com a Vinheria Agnello para dúvidas, sugestões ou informações sobre nossos vinhos.">
+    <meta name="keywords"
+        content="vinheria, contato, vinhos, dúvidas, sugestões, informações">
     <title>Vinharia Agnello - Contato</title>
+    <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #bodyPag4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            bottom: 0;
+            min-height: 100vh;
+        }
+        #MainPag4 {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: #333 0px 0px 20px;
+        }
+        #pPag4 {
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        
+        #formPag4 {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            resize: none;
+        }
+
+        .imagem1 {
+            margin-right: 75%;
+        }
+
+        .imagem2 {
+            margin-left: 75%;
+        }
+
+        .imagem-direita,
+        .imagem-esquerda {
+            height: 60vh;
+        }
+    </style>
 </head>
-<body>
-    
+<body id="bodyPag4">
+    <header>
+        <div class="logo-container">
+            <a href="./../../index.html">
+                <img src="../assets/img/catalogo/logo.png" alt="Logo Agnello Vinheria">
+            </a>
+        </div>
+        <nav>
+            <a href="./../../index.html">Home</a>
+            <a href="./pagina01.html">Catálogo</a>
+            <a href="./pagina02.html">Recomendações</a>
+            <a href="./pagina03.html">Sobre</a>
+        </nav>
+    </header>
+    <div class="imagem1"><img class="imagem-direita" src="../assets/img/Contato/OIP.jpg" alt="vinho"></div>
+    <main id="MainPag4">
+        <h2>Fale conosco</h2>
+        <p id="pPag4">Tem dúvidas ou quer falar sobre vinhos? Mande uma mensagem!</p>
+        <form id="formPag4">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <div class="imagem2"><img class="imagem-esquerda" src="../assets/img/Contato/OIP.jpg" alt="vinho"></div>
+    <footer>
+        <ul class="suporte">
+            <li>Contato: +55 (11) 94800-5562</li>
+            <li>E-mail: contato@agnello.com.br</li>
+            <li><a class="linkSup" href="./pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
+            <li><a class="linkLocal"href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
+        </ul>
+    </footer>
 </body>
+
+
 </html>

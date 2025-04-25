@@ -1,11 +1,456 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um pouco sobre nós e como é produzido o vinho.">
+    <meta name="keywords" content="vinhos, vinhedos, vinheria, loja, vendas, Loja Online, Loja de Vinhos, produção, uvas, uva">
+    <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
     <title>Vinharia Agnello - Sobre</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            min-height: 260vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            bottom: 0;
+        }
+
+        main{
+            flex: 1;
+        }
+
+        #topoPag {
+            text-align: center;
+            margin-top: 140px;
+            font-size: 3rem;
+            color: #501D2E;
+        }
+        .sobre-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            gap: 40px;               
+            margin-top: 50px; 
+            flex-wrap: wrap;         
+        }
+
+        #imgPR,
+         #imgLJ {
+            width: 400px;
+            height: auto;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: solid 4px goldenrod;
+            border-radius: 15px;
+            box-shadow: black 2px 2px 2px;
+        }
+
+        #sobreNos {
+            color: black;
+            font-size: 1.1rem;
+            margin-top: 70px;
+            max-width: 500px;
+            text-align: center;
+        }
+        #nossaLoja {
+            position: relative;
+            left: 400px;
+            display: inline;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .vinhos-recomendados {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .vinhos-recomendados h1 {
+            font-size: 2rem;
+            color: #501D2E;
+            margin-bottom: 20px;
+        }
+
+        .vinho {
+            position: relative;
+            width: 800px;
+            height: 370px;
+            margin: 20px auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            align-items: center;
+            text-align: center;
+            background-color: #501D2E;
+            border-radius: 10px; 
+            padding: 10px;
+        }
+
+        #borda1 {
+            position: absolute;
+            width: 980px;
+            top: -315px;
+            left: -90px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        #borda2 {
+            position: absolute;
+            width: 980px;
+            top: -315px;
+            left: -90px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        #borda3 {
+            position: absolute;
+            width: 980px;
+            top: -315px;
+            left: -90px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        #henriques {
+            position: absolute;
+            top: 45px;
+            left: 80px;
+            max-width: 200px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .conteudoH p{
+            font-size: 1rem;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin-left: 350px;
+            margin-right: 30px;
+            margin-top: 30px;
+            width: 50%;
+        }
+
+        #saibaMais1 {
+            position: absolute;
+            top: 320px;
+            left: 500px;
+            background-color: #501D2E;
+            transition: background-color 0.3s ease;
+            color: white;
+            box-shadow: black 0px 0px 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        #saibaMais1:hover {
+            background-color: #7A2F45;
+        }
+
+        #mirabilis {
+            position: absolute;
+            top: 45px;
+            left: 80px;
+            max-width: 200px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .conteudoMI p{
+            font-size: 1rem;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin-left: 350px;
+            margin-right: 30px;
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        #saibaMais2 {
+            position: absolute;
+            top: 320px;
+            left: 500px;
+            background-color: #501D2E;
+            transition: background-color 0.3s ease;
+            color: white;
+            box-shadow: black 0px 0px 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        #saibaMais2:hover {
+            background-color: #7A2F45;
+        }
+
+        #malhadinha {
+            position: absolute;
+            top: 45px;
+            left: 80px;
+            max-width: 200px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .conteudoMA p{
+            font-size: 1rem;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin-left: 350px;
+            margin-right: 30px;
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        #saibaMais3 {
+            position: absolute;
+            top: 320px;
+            left: 500px;
+            background-color: #501D2E;
+            transition: background-color 0.3s ease;
+            color: white;
+            box-shadow: black 0px 0px 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        #saibaMais3:hover {
+            background-color: #7A2F45;
+        }
+
+        #vinhaDireita1{
+            position: absolute;
+            display: inline-block;
+            top: 110px;
+            left: -570px;
+            mix-blend-mode: multiply;
+            image-rendering: crisp-edges;
+            opacity: 0.6;
+            width: 60%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #vinhaDireita2{
+            position: absolute;
+            display: inline-block;
+            top: 110px;
+            left: -570px;
+            mix-blend-mode: multiply;
+            image-rendering: crisp-edges;
+            opacity: 0.6;
+            width: 60%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #vinhaDireita3{
+            position: absolute;
+            display: inline-block;
+            top: 110px;
+            left: -570px;
+            mix-blend-mode: multiply;
+            image-rendering: crisp-edges;
+            opacity: 0.6;
+            width: 60%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #vinhaEsquerda1{
+            position: absolute;
+            display: inline-block;
+            top: 110px;
+            right: -550px;
+            mix-blend-mode: multiply;
+            image-rendering: crisp-edges;
+            opacity: 0.6;
+            width: 60%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #vinhaEsquerda2{
+            position: absolute;
+            display: inline-block;
+            top: 110px;
+            right: -550px;
+            mix-blend-mode: multiply;
+            image-rendering: crisp-edges;
+            opacity: 0.6;
+            width: 60%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #vinhaEsquerda3{
+            position: absolute;
+            display: inline-block;
+            top: 110px;
+            right: -550px;
+            mix-blend-mode: multiply;
+            image-rendering: crisp-edges;
+            opacity: 0.6;
+            width: 60%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #textOP {
+            text-align: center;
+            color: #501D2E;
+        }
+
+        #textNL {
+            text-align: center;
+            color: #501D2E;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="logo-container">
+            <a href="./../../index.html">
+                <img src="../assets/img/catalogo/logo.png" alt="Logo Agnello Vinheria">
+            </a>
+        </div>
+        <nav>
+            <a href="./../../index.html">Home</a>
+            <a href="./pagina01.html">Catálogo</a>
+            <a href="./pagina02.html">Recomendações</a>
+            <a href="./pagina04.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="topoPag">Sobre nós</h1>
+        <section class="sobre-nos">
+            <div class="sobre-container">
+                <div id="blockOP">
+                    <h2 id="textOP">Onde é produzido</h2>
+                    <img id="imgPR" src="./../assets/img/localDeProdução.jpeg" alt="Local de Produção">
+                </div>
+                <div id="sobreNos">
+                    <p>A nossa Vinheria, vinharia Agnelo, iniciou sua atividade na grande São Paulo há mais de 15
+                        anos, contando com apenas uma loja física onde coloca à disposição do mercado uma
+                        vasta gama de rótulos de vinícolas nacionais e internacionais. </p>
+                    <p> Um dos pilares do mundo dos vinhos é a hora de escolher qual vinho pegar,
+                        que é bastante vasto e diverso. O que torna bastante difícil a
+                        tomada de decisão na hora da compra? São cerca de 6.000 variedades de uvas viníferas no mundo, que adquirem
+                        características e sabores diferentes de acordo com a região, o clima, o solo e os
+                        cuidados em seu cultivo, sem contar com as diferentes técnicas de colheita,
+                        fermentação, processamento e armazenagem, que levam à produção de uma
+                        infinidade de vinhos capazes de atender aos paladares mais diversos. E aqui na vinharia
+                        do Agnelo podemos oferecer uma gigantesca quantidade de vinhos. </p>
+                </div>
+                <div id="blockNL">
+                    <h2 id="textNL">Nossa loja</h2>
+                    <img id="imgLJ" src="./../assets/img/Vinheria_placeholder_03.jpg" alt="Nossa Loja">
+                </div>
+            </div>
+        </section>
+
+        <section class="vinhos-recomendados">
+            <h1>Vinhos Famosos e suas hitórias</h1>
+
+            <div class="vinho">
+                <img id="borda1" src="../assets/img/borda_de_uva.png" alt="Borda de Uva">
+                <div><img id="vinhaDireita1" src="../assets/img/Home_page_imgs/grape_vine.jpg" alt="vinhaDireita"></div>
+                <div class="conteudoH">
+                    <img id="henriques" src="./../assets/img/henriques-e-henriques.jpg" alt="Henriques e Henriques">
+                    <p> ​O Henriques & Henriques é um dos mais renomados produtores
+                        de vinho Madeira, com uma história que remonta a 1850.
+                        A vinícola destaca-se por controlar todas as etapas da produção, desde o cultivo
+                        das uvas até o engarrafamento, garantindo a qualidade e
+                        autenticidade de seus vinhos.​</p>
+                    <p>Os vinhos da Henriques & Henriques são conhecidos por sua complexidade,
+                        equilíbrio entre doçura e acidez, e longevidade. Eles oferecem uma variedade de
+                        estilos, desde os mais secos até os mais doces, utilizando castas tradicionais
+                        como Sercial, Verdelho, Bual (Boal) e Malvasia.
+                        Temos os Henriques & Henriques medium rich madeira e full rich madeira.</p>
+                    <a href="https://www.youtube.com/watch?v=nD3qb__Og_0"><button id="saibaMais1">SaibaMais</button></a>
+                </div>
+                <div><img id="vinhaEsquerda1" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda"></div>
+            </div>
+
+            <div class="vinho">
+                <img id="borda2" src="../assets/img/borda_de_uva.png" alt="Borda de Uva">
+                <div><img id="vinhaDireita2" src="../assets/img/Home_page_imgs/grape_vine.jpg" alt="vinhaDireita"></div>
+                <div class="conteudoMI">
+                    <img id="mirabilis" src="./../assets/img/mirabilis.jpg" alt="Mirabilis">
+                    <p>O Mirabilis é um vinho de autor produzido pela
+                        Quinta Nova de Nossa Senhora do Carmo, no Douro, e é considerado
+                        uma das mais refinadas expressões desse terroir. A versão branca nasce
+                        de vinhas muito velhas e castas como Viosinho e Gouveio, resultando num
+                        vinho vibrante e profundo.</p>
+                    <p>Já o Mirabilis tinto é feito a partir de vinhas
+                        antigas, com castas como Tinta Amarela e outras autóctones do Douro.
+                        É um vinho estruturado, com cor intensa e aromas profundos de frutas
+                        escuras maduras, especiarias e um leve toque de madeira bem integrada.
+                        Na boca, é encorpado, com taninos finos e persistência longa, um vinho
+                        que impressiona pela sofisticação e equilíbrio. Temos ambos os vinhos.</p>
+                    <a href="https://www.youtube.com/watch?v=TWkhZ3tKsYM"><button id="saibaMais2">SaibaMais</button></a>
+                </div>
+                <div><img id="vinhaEsquerda2" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda"></div>
+            </div>
+
+            <div class="vinho">
+                <img id="borda3" src="../assets/img/borda_de_uva.png" alt="Borda de Uva">
+                <div><img id="vinhaDireita3" src="../assets/img/Home_page_imgs/grape_vine.jpg" alt="vinhaDireita"></div>
+                <div class="conteudoMA">
+                    <img id="malhadinha" src="./../assets/img/malhadinha-nova.jpg" alt="Malhadinha Nova">
+                    <p>O Malhadinha Nova é um vinho de assinatura
+                        da Herdade da Malhadinha Nova, no Alentejo, que combina tradição,
+                        elegância e um perfil contemporâneo.</p>
+                    <p>O Malhadinha Tinto apresenta um nariz expressivo
+                        com notas de frutas pretas e azuis, especiarias e leves tostados. Na boca,
+                        é complexo, redondo, com taninos maduros e polidos, e um final longo,
+                        demonstrando grande potencial de envelhecimento.</p>
+                    <p>Já o Malhadinha Branco destaca-se por sua frescura
+                        e complexidade aromática, com notas de frutas de polpa branca,
+                        nuances florais e toques sutis de barrica. Em boca, revela-se equilibrado,
+                        volumoso, fresco e elegante, culminando em um final persistente.</p>
+                    <a href="https://www.youtube.com/watch?v=akwWMjDz8VQ"><button id="saibaMais3">SaibaMais</button></a>
+                </div>
+                <div><img id="vinhaEsquerda3" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="suporte">
+            <li>Contato: +55 (11) 94800-5562</li>
+            <li>E-mail: contato@agnello.com.br</li>
+            <li><a class="linkSup" href="./pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
+            <li><a class="linkLocal" href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
+        </ul>
+    </footer>
 </body>
+
 </html>

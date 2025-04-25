@@ -1,11 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="pagina02">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinharia Agnello - Catalogo</title>
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <meta nome="keyword"
+        content="tabela, vinhos, vinhedos, vinheria, loja, vendas, Loja Online, Loja de Vinhos, vinho tinto, vinho branco, espumante, vinho rose, vinho doce">
+    <meta name="description"
+        content="Tabela completa de vinhos, com informações sobre tipo, país, descrição, vendas e preço, descubra os melhores vinhos nacionais e internacionais na loja de vinhos: Vinheria Agnello">
+    <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Vinharia Agnello - Recomendações</title>
+    <style>
+        #principalR {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            padding: 40px 20px;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        #recomendacoes {
+            width: 100%;
+            border: 3px solid #501D2E;
+            border-radius: 5px;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            z-index: 2;
+        }
+
+        thead,
+        tbody,
+        th,
+        td {
+            border: 1px solid #501D2E;
+            padding: 10px;
+            text-align: left;
+            border-radius: 2px;
+            font-size: small;
+            font-family: Arial, sans-serif;;
+        }
+
+        th {
+            background-color: #f3e5d7;;
+        }
+
+        #colunaVendas,
+        #colunaPreco {
+            width: 100px;
+        }
+
+        #filtro {
+            font-size: large;
+            font-family: Arial, sans-serif;
+        }
+
+        #filtroTipo {
+            font-size: large;
+            font-family: Arial, sans-serif;
+        }
+
+        #vendas,
+        #preco {
+            padding: 5px 15px;
+            margin-left: 10px;
+            font-size: small;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body id="corpoP2">
+    <header>
+        <div class="logo-container">
+            <a href="./../../index.html">
+                <img src="../assets/img/catalogo/logo.png" alt="Logo Agnello Vinheria">
+            </a>
+        </div>
+
+        <nav>
+            <a href="./../../index.html">Home</a>
+            <a href="./pagina01.html">Catálogo</a>
+            <a href="./pagina03.html">Sobre</a>
+            <a href="./pagina04.html">Contato</a>
+        </nav>
+    </header>
+
+    <main id="principalR">
+        <div class="imagem1"><img class="imagem-esquerda"
+                src="../assets/img/Recomendações/uma-vista-deslumbrante-da-vinha-com-videiras-e-natureza_23-2151514868.jpg"
+                alt="vinho"></div>
+        <div class="tabela-container">
+            <label id="filtro" for="filtroTipo">Filtrar por tipo:</label>
+            <select id="filtroTipo" onchange="filtrarPorTipo()">
+                <option value="">Todos</option>
+                <option value="tinto">Tinto</option>
+                <option value="branco">Branco</option>
+                <option value="rose">Rose</option>
+                <option value="espumante">Espumante</option>
+                <option value="doce">Doce</option>
+            </select>
+
+            <table id="recomendacoes" cellpadding="10" cellspacing="3">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>País</th>
+                        <th>Descrição</th>
+                        <th id="colunaVendas">
+                            Vendas
+                            <button id="vendas" onclick="ordenarTabela(4)">↕</button>
+                        </th>
+                        <th id="colunaPreco">
+                            Preço
+                            <button id="preco" onclick="ordenarTabela(5)">↕</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Syrah</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Notas de especiarias e frutas negras.</td><td>8.200</td><td>R$ 84,90</td></tr>
+                    <tr><td>Chardonnay</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Branco seco com notas de frutas tropicais.</td><td>7.500</td><td>R$ 74,90</td></tr>
+                    <tr><td>Sauvignon Blanc</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/novaZelandia.png" alt="Nova Zelândia"> Nova Zelândia</td><td>Refrescante, ideal para peixes e saladas.</td><td>6.700</td><td>R$ 64,90</td></tr>
+                    <tr><td>Malbec</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/argentina.png" alt="Argentina"> Argentina</td><td>Intenso e aveludado, típico da Argentina.</td><td>9.400</td><td>R$ 82,90</td></tr>
+                    <tr><td>Zinfandel</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/eua.png" alt="EUA"> EUA</td><td>Americano, frutado e levemente adocicado.</td><td>6.900</td><td>R$ 77,90</td></tr>
+                    <tr><td>Rosé</td><td>rose</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Leve, refrescante e perfeito para o verão.</td><td>11.300</td><td>R$ 59,90</td></tr>
+                    <tr><td>Espumante Brut</td><td>espumante</td><td><img class="bandeiras" src="../assets/img/bandeiras/brasil.png" alt="Brasil"> Brasil</td><td>Seco e elegante, ideal para festas.</td><td>7.800</td><td>R$ 89,90</td></tr>
+                    <tr><td>Prosecco</td><td>espumante</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Italiano, leve e com borbulhas suaves.</td><td>9.000</td><td>R$ 72,90</td></tr>
+                    <tr><td>Vinho do Porto</td><td>doce</td><td><img class="bandeiras" src="../assets/img/bandeiras/portugal.png" alt="Portugal"> Portugal</td><td>Doce e encorpado, ótimo como digestivo.</td><td>6.400</td><td>R$ 94,90</td></tr>
+                    <tr><td>Ice Wine</td><td>doce</td><td><img class="bandeiras" src="../assets/img/bandeiras/canada.png" alt="Canadá"> Canadá</td><td>Raro e doce, feito de uvas congeladas.</td><td>2.800</td><td>R$ 109,90</td></tr>
+                    <tr><td>Lambrusco</td><td>espumante</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Espumante tinto italiano, leve e doce.</td><td>7.100</td><td>R$ 62,90</td></tr>
+                    <tr><td>Barbera</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Italiano, com acidez equilibrada e aroma frutado.</td><td>5.600</td><td>R$ 66,90</td></tr>
+                    <tr><td>Tempranillo</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/espanha.png" alt="Espanha"> Espanha</td><td>Tradicional da Espanha, encorpado e seco.</td><td>6.200</td><td>R$ 79,90</td></tr>
+                    <tr><td>Gewürztraminer</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/alemanha.png" alt="Alemanha"> Alemanha</td><td>Aromático e floral, excelente com pratos exóticos.</td><td>4.300</td><td>R$ 74,90</td></tr>
+                    <tr><td>Riesling</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/alemanha.png" alt="Alemanha"> Alemanha</td><td>Branco alemão, doce ou seco com grande frescor.</td><td>5.900</td><td>R$ 68,90</td></tr>
+                    <tr><td>Grenache</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Suave e frutado, bom para iniciantes.</td><td>6.300</td><td>R$ 63,90</td></tr>
+                    <tr><td>Petit Verdot</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Escuro, denso e com boa acidez.</td><td>4.900</td><td>R$ 81,90</td></tr>
+                    <tr><td>Carmenère</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/chile.png" alt="Chile"> Chile</td><td>Especialidade do Chile, herbáceo e macio.</td><td>7.200</td><td>R$ 73,90</td></tr>
+                    <tr><td>Tannat</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/uruguai.png" alt="Uruguai"> Uruguai</td><td>Uruguaio, potente e ideal para churrascos.</td><td>5.100</td><td>R$ 78,90</td></tr>
+                    <tr><td>Verdelho</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/portugal.png" alt="Portugal"> Portugal</td><td>Branco seco e leve, ideal para frutos do mar.</td><td>3.700</td><td>R$ 65,90</td></tr>
+                    <tr><td>Touriga Nacional</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/portugal.png" alt="Portugal"> Portugal</td><td>Potente e complexo, típico de Portugal.</td><td>5.400</td><td>R$ 88,90</td></tr>
+                    <tr><td>Albariño</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/espanha.png" alt="Espanha"> Espanha</td><td>Branco espanhol, fresco e aromático.</td><td>6.100</td><td>R$ 76,90</td></tr>
+                    <tr><td>Garnacha</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/espanha.png" alt="Espanha"> Espanha</td><td>Frutado e suave, muito apreciado na Espanha.</td><td>6.500</td><td>R$ 69,90</td></tr>
+                    <tr><td>Moscato</td><td>doce</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Frutado e suave, muito apreciado na Espanha.</td><td>10.800</td><td>R$ 58,90</td></tr>
+                    <tr><td>Bordeaux</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Frutado e suave, muito apreciado na Espanha.</td><td>7.600</td><td>R$ 92,90</td></tr>
+                    <tr><td>Pinot Noir</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Leve, frutado e delicado, ideal para iniciantes.</td><td>9.000</td><td>R$ 81,90</td></tr>
+                    <tr><td>Cabernet Franc</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/franca.png" alt="França"> França</td><td>Notas herbáceas e frutas vermelhas</td><td>6.900</td><td>R$ 84,00</td></tr>
+                    <tr><td>Rosso di Montalcino</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Italiano, seco com taninos leves.</td><td>5.200</td><td>R$ 88,90</td></tr>
+                    <tr><td>Dolcetto</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Tinto italiano leve e frutado.</td><td>4.800</td><td>R$ 72,90</td></tr>
+                    <tr><td>Barolo</td><td>tinto</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Italiano encorpado, com grande complexidade.</td><td>6.100</td><td>R$ 124,90</td></tr>
+                    <tr><td>Frascati</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Branco leve e refrescante de Roma.</td><td>3.500</td><td>R$ 67,90</td></tr>
+                    <tr><td>Trebbiano</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Branco italiano com leve acidez.</td><td>4.000</td><td>R$ 59,90</td></tr>
+                    <tr><td>Vernaccia</td><td>branco</td><td><img class="bandeiras" src="../assets/img/bandeiras/italia.png" alt="Itália"> Itália</td><td>Branco toscano com notas minerais.</td><td>4.600</td><td>R$ 74,90</td></tr>
+                    <tr><td>Tokaji</td><td>doce</td><td><img class="bandeiras" src="../assets/img/bandeiras/hungria.png" alt="Hungria"> Hungria</td><td>Doce húngaro tradicional e nobre.</td><td>3.300</td><td>R$ 139,90</td></tr>
+                </tbody>
+            </table>            
+        </div>
+        <div class="imagem2"><img class="imagem-esquerda"
+                src="../assets/img/Recomendações/uma-vista-deslumbrante-da-vinha-com-videiras-e-natureza_23-2151514868.jpg"
+                alt="vinho"></div>
+    </main>
+
+    <footer>
+        <ul class="suporte">
+            <li>Contato: +55 (11) 94800-5562</li>
+            <li>E-mail: contato@agnello.com.br</li>
+            <li><a class="linkSup" href="./pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
+            <li><a class="linkLocal" href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
+        </ul>
+    </footer>
+    <script>
+        function filtrarPorTipo() {
+            const tipoSelecionado = document.getElementById("filtroTipo").value.toLowerCase();
+            const linhas = document.querySelectorAll("#recomendacoes tbody tr");
+
+            linhas.forEach(linha => {
+                const tipo = linha.cells[1].textContent.toLowerCase();
+                linha.style.display = (!tipoSelecionado || tipo === tipoSelecionado) ? "" : "none";
+            });
+        }
+        let ordemCrescente = true;
+
+        function ordenarTabela(colunaIndex) {
+            const tabela = document.getElementById("recomendacoes");
+            const linhas = Array.from(tabela.querySelectorAll("tbody tr"));
+
+            linhas.sort((a, b) => {
+                const valorA = a.cells[colunaIndex].textContent.replace(/[^\d,.-]/g, '').replace(',', '.');
+                const valorB = b.cells[colunaIndex].textContent.replace(/[^\d,.-]/g, '').replace(',', '.');
+
+                return ordemCrescente
+                    ? parseFloat(valorA) - parseFloat(valorB)
+                    : parseFloat(valorB) - parseFloat(valorA);
+            });
+
+            const tbody = tabela.querySelector("tbody");
+            linhas.forEach(linha => tbody.appendChild(linha));
+
+            ordemCrescente = !ordemCrescente;
+        }
+    </script>
 </body>
+
 </html>

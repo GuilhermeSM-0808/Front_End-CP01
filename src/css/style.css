@@ -1,0 +1,226 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    top: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(150deg, #dabc7c, #501D2E);
+    color: #333;
+}
+
+.logo{
+    width: 32%;
+}
+.logo-container img {
+    height: 80px;
+    width: auto;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    background-color: #501D2E;
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+header h1{
+    font-size: 42px;
+}
+.logo{
+    max-width: 32%;
+}
+header nav {
+    
+    padding-right: 80px;
+    
+}
+header nav a{
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-left: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 150%;
+}
+header nav a:hover{
+    color: orange;
+    font-size: 24px;
+    padding-left: 28px;
+    padding-bottom: 4px;
+}
+div section a {
+    color: aliceblue;
+    font-style: italic;
+    
+    opacity: 0.8;
+    position: absolute;
+    left: 45.5%;
+    top: 36vw;
+
+    font-size: 2.5vw;
+    z-index: 0;
+    mix-blend-mode: difference;
+}
+
+.vineleft01{
+    mix-blend-mode: multiply;
+    image-rendering: crisp-edges;
+    opacity: 0.6;
+    width: 30%;
+    margin-left: -5%;
+    padding-bottom: 30px;
+}
+.grapes{
+    position: absolute;
+    mix-blend-mode: multiply;
+    image-rendering: crisp-edges;
+    opacity: 0.6;
+    top: inherit;
+    width: 20%;
+    margin-left: 15%;
+    z-index: -1;
+
+}
+
+.vineleft02{
+    position: absolute;
+    mix-blend-mode: multiply;
+    image-rendering: crisp-edges;
+    opacity: 0.6;
+    width: 30%;
+    overflow: hidden;
+    margin-left: 47%;
+    padding-bottom: 30px;
+}
+
+.tabela-container {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-color: #501D2E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.fotoloja {
+    position: absolute;
+    display: inline;
+    border: 3px solid #2E101F;
+    margin-top: 100px;
+    left: 53%;
+    align-items: center;
+    object-fit: contain;
+    width: 45%;
+    height: auto;
+    z-index: -1;
+}
+
+.endingimg{
+    position: static;
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+    bottom: 0;
+    width: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+footer{
+    background-color: #501D2E;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+footer .suporte li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    justify-content: right;  
+    bottom: 0; 
+} 
+
+.linkSup,
+.linkLocal{
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.linkSup:hover,
+.linkLocal:hover{
+    color: orange;
+}
+
+button {
+    background-color: #501D2E;
+    transition: background-color 0.3s ease-in;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7A2F45;
+}
+
+.bandeiras{
+    width: 20px;
+    height: auto;
+}
+
+.imagem1 {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin-right: 75%;
+}
+
+.imagem2 {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin-left: 75%;
+}
+
+.imagem-direita,
+.imagem-esquerda {
+    overflow: hidden;
+    height: 85vh;
+    filter: sepia(100%) brightness(80%) contrast(100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 300px;
+}
