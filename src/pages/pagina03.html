@@ -1,197 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br" id="Pagina03">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"  
-        content="Um pouco sobre nós e como é produzido o vinho.">
-    <meta name="keywords"
-        content="vinhos, vinhedos, vinheria, loja, vendas, Loja Online, Loja de Vinhos, produção, uvas, uva">
+    <meta name="description" content="Um pouco sobre nós e como é produzido o vinho.">
+    <meta name="keywords" content="vinhos, vinhedos, vinheria, loja, vendas, Loja Online, Loja de Vinhos, produção, uvas, uva">
     <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
     <title>Vinharia Agnello - Sobre</title>
     <link rel="stylesheet" href="../css/style.css">
 
     <style>
+        /* Estilo geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f4f0;
+        }
+        /* Título principal */
         #topoPag {
-            margin-top: -6px;
-            padding-top: 200px;
-            padding-left: 550px;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2rem;
+            color: #501D2E;
         }
 
-        .textNos {
-            padding: 0px 0px 0px 440px;
-            text-indent: 30px;
-            display: block;
-            width: 550px;
+        /* Seção "Sobre Nós" */
+        .sobre-nos {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            margin: 40px auto;
+            max-width: 90%;
         }
 
-        .textNos1 {
-            padding: 0px 0px 0px 440px;
-            text-indent: 30px;
-            display: block;
-            width: 550px;
+        .sobre-nos .texto {
+            max-width: 50%;
+            line-height: 1.6;
+            color: #333;
         }
 
-        #producao {
-            position: relative;
-            top: -485px;
-            left: 125px;
-            background-color: #ffff;
-            height: 0px;
-        }
-
-        #localProducao {
-            position: relative;
-            top: -250px;
-            left: 25px;
-            border: 4px solid #501D2E;
-            border-radius: 50px;
-
-        }
-
-        #Loja {
-            width: 300px;
-            height: 250px;
-            position: relative;
-            left: 1025px;
-            top: -500px;
-            border-radius: 75px;
-        }
-
-        #nssLoja {
-            position: relative;
-            left: 1145px;
-            top: -800px;
-        }
-
-        #mapa {
-            position: relative;
-            top: -350px;
-        }
-
-        #melhorVinho {
-            width: 245px;
-            height: 285px;
-            display: inline;
-            padding: 18px 0px 0px 300px;
-        }
-
-        #VinhoRec {
-            margin-left: 500px;
-        }
-
-        #Henriques {
-            position: relative;
-            background-color: #501D2E;
-            display: block;
-            left: 0px;
-            margin-left: 100px;
-            width: 1080px;
-            height: 330px;
-            margin-bottom: 50px;
+        .sobre-nos img {
+            max-width: 40%;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        #malhadinha-nova {
-            position: relative;
-            background-color: #501D2E;
-            display: block;
-            left: 0px;
-            margin-left: 100px;
-            width: 1080px;
-            height: 330px;
-            border-radius: 10px;
-            margin-bottom: 50px;
-        }
-
-        #mirabilis {
-            position: relative;
-            background-color: #501D2E;
-            display: block;
-            left: 0px;
-            margin-left: 100px;
-            width: 1080px;
-            height: 330px;
-            margin-bottom: 50px;
-            border-radius: 10px;
-        }
-
-        .SegMelhor {
-            width: 245px;
-            height: 285px;
-            padding: 10px 0px 0px 300px;
-        }
-
-        .descricaoVinho1,
-        .descricaoVinho2,
-        .descricaoVinho3 {
-            text-indent: 30px;
-            position: relative;
-            top: -250px;
-            margin-left: 550px;
-            display: inline-block;
-            background-color: #501D2E;
-            color: white;
-        }
-
-        .descricaoVinho11,
-        .descricaoVinho22,
-        .descricaoVinho33 {
-            text-indent: 30px;
-            position: relative;
-            top: -282px;
-            left: 550px;
-            display: inline-block;
-            background-color: #501D2E;
+        .sobre-nos h4 {
+            text-align: center;
             margin-bottom: 10px;
-            width: 550px;
-            color: white;
+            font-size: 1.2rem;
+            color: #501D2E;
         }
 
-        .descricaoVinho333 {
-            text-indent: 30px;
+        /* Artigos dos vinhos */
+        .vinhos-recomendados {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .vinhos-recomendados h1 {
+            font-size: 2rem;
+            color: #501D2E;
+            margin-bottom: 20px;
+        }
+
+        .vinho {
             position: relative;
-            top: -325px;
-            left: 550px;
-            display: inline-block;
-            background-color: #501D2E;
-            margin-bottom: 10px;
-            width: 550px;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #501D2E; /* Cor de fundo atrás da borda_de_uva */
+            border-radius: 10px; /* Bordas arredondadas para combinar com a borda */
+            padding: 10px; /* Espaçamento interno para a borda */
+        }
+
+        .vinho img.borda {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .vinho .conteudo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            text-align: center;
             color: white;
         }
 
-        #nav {
-            padding-left: 650px;
+        .vinho .conteudo img {
+            max-width: 150px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        .vinho .conteudo p {
+            margin: 10px 0;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Botões "Saiba Mais" */
         .saibaMais {
-            margin-top: -25px;
-            margin-bottom: 25px;
+            text-align: center;
+            margin: 20px 0;
         }
 
-        #Pagina03 {
-            overflow-x: hidden;
-            height: 2200px;
+        .saibaMais button {
+            background-color: #501D2E;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
         }
 
-        #Pagina003 {
-            overflow: hidden;
-            height: 2200px;
-        }
-        #borda {
-            overflow: hidden;
-            position: relative;
-            align-items: center;
-            top: -270px;
-            left: -120px;
-            width: 1300px;
-            height: 850px;
+        .saibaMais button:hover {
+            background-color: #7A2F45;
         }
     </style>
 </head>
 
-<body id="Pagina003">
+<body>
 
     <header>
         <div class="logo-container">
@@ -207,100 +145,55 @@
         </nav>
     </header>
 
-    <section>
-        <h1 id="topoPag">Um pouco sobre nós </h1>
-        <p class="textNos">A nossa Vinheria, vinharia Agnelo, iniciou sua atividade na grande São Paulo há mais de 15
-            anos,
-            contando com apenas uma loja física onde coloca à disposição do mercado uma
-            vasta gama de rótulos de vinícolas nacionais e internacionais. </p>
-        <p class="textNos1"> Um dos pilares do mundo dos vinhos é a hora de escolher qual vinho pegar,
-            que é bastante vasto e diverso. O que torna bastante difícil a
-            tomada de decisão na hora da compra? São cerca de 6.000 variedades de uvas viníferas no mundo, que adquirem
-            características e sabores diferentes de acordo com a região, o clima, o solo e os
-            cuidados em seu cultivo, sem contar com as diferentes técnicas de colheita,
-            fermentação, processamento e armazenagem, que levam à produção de uma
-            infinidade de vinhos capazes de atender aos paladares mais diversos. E aqui na vinharia
-            do Agnelo podemos oferecer uma gigantesca quantidade de vinhos. </p>
-        <img id="localProducao" src="./../assets/img/localDeProdução.jpeg" alt="./../assets/img/localDeProdução.jpeg">
-        <h4 id="producao">onde é produzido</h4>
-        <img id="Loja" src="./../assets/img/Vinheria_placeholder_03.jpg"
-            alt="./../assets/img/Vinheria_placeholder_03.jpg">
-        <h4 id="nssLoja">Nossa loja </h4>
+    <main>
+        <h1 id="topoPag">Sobre nós</h1>
 
+        <!-- Seção "Sobre Nós" -->
+        <section class="sobre-nos">
+            <div>
+                <h4>Onde é produzido</h4>
+                <img src="./../assets/img/localDeProdução.jpeg" alt="Local de Produção">
+                <p class="texto">A nossa Vinheria, vinharia Agnelo, iniciou sua atividade na grande São Paulo há mais de 15 anos, contando com apenas uma loja física onde coloca à disposição do mercado uma vasta gama de rótulos de vinícolas nacionais e internacionais.</p>
+            </div>
+            <div>
+                <h4>Nossa loja</h4>
+                <img src="./../assets/img/Vinheria_placeholder_03.jpg" alt="Nossa Loja">
+            </div>
+        </section>
 
-        <map name="mapa" id="mapa">
-            <h1 id="VinhoRec">vinhos recomendados:</h1>
-            <article>
-                <div id="Henriques">
-                    <img id="borda" src="../assets/img/borda_de_uva.png" alt="borda">
-                    <img id="melhorVinho" src="./../assets/img/henriques-e-henriques.jpg"
-                        alt="henriques-e-henriques">
-                    <p class="descricaoVinho1"> ​O Henriques & Henriques é um dos mais renomados produtores
-                        de vinho Madeira, com uma história que remonta a 1850.
-                        A vinícola destaca-se por controlar todas as etapas da produção, desde o cultivo
-                        das uvas até o engarrafamento, garantindo a qualidade e
-                        autenticidade de seus vinhos.​</p>
-                    <p class="descricaoVinho11">Os vinhos da Henriques & Henriques são conhecidos por sua complexidade,
-                        equilíbrio entre doçura e acidez, e longevidade. Eles oferecem uma variedade de
-                        estilos, desde os mais secos até os mais doces, utilizando castas tradicionais
-                        como Sercial, Verdelho, Bual (Boal) e Malvasia.
-                        Temos os Henriques & Henriques medium rich madeira e full rich madeira.</p>
+        <!-- Vinhos Recomendados -->
+        <section class="vinhos-recomendados">
+            <h1>Vinhos Famosos e suas hitórias</h1>
+
+            <!-- Primeiro vinho -->
+            <div class="vinho">
+                <img class="borda" src="../assets/img/borda_de_uva.png" alt="Borda de Uva">
+                <div class="conteudo">
+                    <img src="./../assets/img/henriques-e-henriques.jpg" alt="Henriques e Henriques">
+                    <p>O Henriques & Henriques é um dos mais renomados produtores de vinho Madeira, com uma história que remonta a 1850.</p>
                 </div>
-            </article>
+            </div>
 
-            <h3 class="saibaMais">Saiba mais sobre Henriques & Henriques: <a
-                    href="https://www.youtube.com/watch?v=nD3qb__Og_0">
-                    <button>clique aqui</button>
-                </a></h3>
-
-            <article>
-                <div id="mirabilis">
-                    <img id="borda" src="../assets/img/borda_de_uva.png" alt="borda">
-                    <img class="SegMelhor" src="./../assets/img/mirabilis.jpg" alt="mirabilis">
-                    <p class="descricaoVinho2">O Mirabilis é um vinho de autor produzido pela
-                        Quinta Nova de Nossa Senhora do Carmo, no Douro, e é considerado
-                        uma das mais refinadas expressões desse terroir. A versão branca nasce
-                        de vinhas muito velhas e castas como Viosinho e Gouveio, resultando num
-                        vinho vibrante e profundo.</p>
-                    <p class="descricaoVinho22">Já o Mirabilis tinto é feito a partir de vinhas
-                        antigas, com castas como Tinta Amarela e outras autóctones do Douro.
-                        É um vinho estruturado, com cor intensa e aromas profundos de frutas
-                        escuras maduras, especiarias e um leve toque de madeira bem integrada.
-                        Na boca, é encorpado, com taninos finos e persistência longa, um vinho
-                        que impressiona pela sofisticação e equilíbrio. Temos ambos os vinhos.</p>
+            <!-- Segundo vinho -->
+            <div class="vinho">
+                <img class="borda" src="../assets/img/borda_de_uva.png" alt="Borda de Uva">
+                <div class="conteudo">
+                    <img src="./../assets/img/mirabilis.jpg" alt="Mirabilis">
+                    <p>O Mirabilis é um vinho de autor produzido pela Quinta Nova de Nossa Senhora do Carmo, no Douro.</p>
                 </div>
-            </article>
+            </div>
 
-            <h3 class="saibaMais">Saiba mais sobre Mirabilis: <a href="https://www.youtube.com/watch?v=TWkhZ3tKsYM">
-                    <button>clique aqui</button>
-                </a></h3>
-
-            <article>
-                <div id="malhadinha-nova">
-                    <img id="borda" src="../assets/img/borda_de_uva.png" alt="borda">
-                    <img class="SegMelhor" src="./../assets/img/malhadinha-nova.jpg"
-                    alt="malhadinha-nova">
-                    <p class="descricaoVinho3">O Malhadinha Nova é um vinho de assinatura
-                        da Herdade da Malhadinha Nova, no Alentejo, que combina tradição,
-                        elegância e um perfil contemporâneo.</p>
-                    <p class="descricaoVinho33">O Malhadinha Tinto apresenta um nariz expressivo
-                        com notas de frutas pretas e azuis, especiarias e leves tostados. Na boca,
-                        é complexo, redondo, com taninos maduros e polidos, e um final longo,
-                        demonstrando grande potencial de envelhecimento.</p>
-                    <p class="descricaoVinho333">Já o Malhadinha Branco destaca-se por sua frescura
-                        e complexidade aromática, com notas de frutas de polpa branca,
-                        nuances florais e toques sutis de barrica. Em boca, revela-se equilibrado,
-                        volumoso, fresco e elegante, culminando em um final persistente.</p>
+            <!-- Terceiro vinho -->
+            <div class="vinho">
+                <img class="borda" src="../assets/img/borda_de_uva.png" alt="Borda de Uva">
+                <div class="conteudo">
+                    <img src="./../assets/img/malhadinha-nova.jpg" alt="Malhadinha Nova">
+                    <p>O Malhadinha Nova é um vinho de assinatura da Herdade da Malhadinha Nova, no Alentejo.</p>
                 </div>
-            </article>
-            <h3 id="ultimoSaibaMais">Saiba mais sobre Malhadinha Nova: <a
-                    href="https://www.youtube.com/watch?v=akwWMjDz8VQ">
-                    <button>clique aqui</button>
-                </a></h3>
+            </div>
+        </section>
+    </main>
 
-        </map>
-
-    </section>
     <footer>
         <ul class="suporte">
             <li>Contato: +55 (11) 94800-5562</li>
