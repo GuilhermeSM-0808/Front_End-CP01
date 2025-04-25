@@ -13,23 +13,6 @@ body{
     color: #333;
 }
 
-.bg-video {
-    position: absolute;
-    left: 0;
-    top: -5.5%;
-    background: cover no-repeat center;
-    user-select: none;
-    pointer-events: none;
-    height: 100%;
-    width: 177.77777778vh; 
-    min-width: 100%;
-    min-height: 56.25vw;
-    width: auto;
-    height: auto;
-    display: block;
-    z-index: -1;
-    
-}
 .logo{
     width: 32%;
 }
@@ -90,40 +73,6 @@ div section a {
     mix-blend-mode: difference;
 }
 
-.arrow{
-    position: relative;
-    padding-left: 70%;
-    padding-top: 80%;
-    width: 4vw;
-    height: auto;
-}
-
-.main-home-page{
-    position: static;
-    padding-left: 0px;
-    padding-top: 56vw;
-    min-height: 125vh;
-    z-index: 1;
-}
-
-#resumo{
-    display: block;
-    position: static;
-    width: auto;
-    height: 120%;
-    padding: 3% 25% 2% 25%;
-    margin-top: -150px;
-
-    font-size: 2.5vw;
-    background-color: #6F2539;
-    color: aliceblue;
-    text-align: center;
-
-    border-top: 3px solid #2E101F;
-    border-bottom: 3px solid #2E101F;
-
-    overflow: auto;
-}
 .vineleft01{
     mix-blend-mode: multiply;
     image-rendering: crisp-edges;
@@ -144,6 +93,17 @@ div section a {
 
 }
 
+.vineleft02{
+    position: absolute;
+    mix-blend-mode: multiply;
+    image-rendering: crisp-edges;
+    opacity: 0.6;
+    width: 30%;
+    overflow: hidden;
+    margin-left: 47%;
+    padding-bottom: 30px;
+}
+
 .tabela-container {
     margin-top: 100px;
     width: 100%;
@@ -156,23 +116,6 @@ div section a {
     align-self: center;
     align-items: center;
     margin-bottom: 80px;
-}
-
-.vineleft02{
-    position: absolute;
-    mix-blend-mode: multiply;
-    image-rendering: crisp-edges;
-    opacity: 0.6;
-    width: 30%;
-    overflow: hidden;
-    margin-left: 47%;
-    padding-bottom: 30px;
-}
-
-.cadagarrafa{
-    margin: 0;
-    margin-left: 20px;
-    margin-top: 120px;
 }
 
 .fotoloja {
@@ -197,7 +140,6 @@ div section a {
     z-index: -2;
     overflow: hidden;
 }
-
 
 footer{
     background-color: #501D2E;
@@ -251,4 +193,34 @@ button {
 
 button:hover {
     background-color: #7A2F45;
+}
+
+.bandeiras{
+    width: 20px;
+    height: auto;
+}
+
+.imagem1 {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin-right: 75%;
+}
+
+.imagem2 {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin-left: 75%;
+}
+
+.imagem-direita,
+.imagem-esquerda {
+    overflow: hidden;
+    height: 85vh;
+    filter: sepia(100%) brightness(80%) contrast(100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 300px;
 }
