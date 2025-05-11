@@ -19,9 +19,12 @@ Front_End-CP01/
 │   ├── assets/
 │   │   └── imgs/
 │   │        ├── Home_page_imgs/
-│   │        ├── pagina03_imgs/
-│   │        └── Catalogo_imgs/
+│   │        ├── Recomendações_imgs/
+│   │        ├── bandeiras_imgs/
+│   │        ├── Contato_imgs/
+│   │        └── catalogo_imgs/
 │   ├── css/
+│   │   ├── efeitos.css
 │   │   └── style.css
 │   ├── js/
 │   └── pages/
