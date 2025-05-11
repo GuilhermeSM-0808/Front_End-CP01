@@ -5,7 +5,7 @@ O caso envolve arranjar uma solução para fornecer aos clientes uma experiencia
 
 ---
 
-## https://guilhermesm-0808.github.io/Front_End-CP01/
+## https://guilhermesm-0808.github.io/Front_End-CP02/
 
 
 ## Estrutura projeto
