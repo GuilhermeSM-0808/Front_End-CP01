@@ -12,6 +12,7 @@
     <title>Vinheria Agnello - Home Page</title>
 
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/efeitos.css">
     <link rel="shortcut icon" href="./src/assets/img/loguinho2.png" type="image/x-icon">
 
     <meta name="loja" 
@@ -31,22 +32,8 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, google chrome, opera gx">
+
     <style>
-        #textoapresentacao {
-            font-size: 24px;
-            background-color: #6F2539;
-            color: aliceblue;
-            text-align: justify;
-            line-height: 120%;
-            border: 3px solid #2E101F;
-            display: block;
-            position: absolute;
-            margin-top: auto;
-            width: 50%;
-            height: 700px;
-            padding: 20px 30px 5px 30px;
-            overflow: auto;
-        }
         #resumo{
             display: block;
             position: static;
@@ -54,15 +41,15 @@
             height: 120%;
             padding: 3% 25% 2% 25%;
             margin-top: -150px;
-
+            
             font-size: 2.5vw;
             background-color: #6F2539;
             color: aliceblue;
             text-align: center;
-
+            
             border-top: 3px solid #2E101F;
             border-bottom: 3px solid #2E101F;
-
+            
             overflow: auto;
         }
         
@@ -88,7 +75,7 @@
             position: static;
             padding-left: 0px;
             padding-top: 56vw;
-            min-height: 125vh;
+            min-height: 130vh;
             z-index: 1;
         }
         #arrow{
@@ -99,11 +86,44 @@
             height: auto;
         }
         
-        #cadagarrafa{
-            margin: 0;
-            margin-left: 20px;
-            margin-top: 120px;
+        #textoapresentacao {
+            font-size: 24px;
+            background-color: #6F2539;
+            color: aliceblue;
+            text-align: justify;
+            line-height: 120%;
+            border: 3px solid #2E101F;
+            display: block;
+            position: absolute;
+            margin-top: auto;
+            width: 50%;
+            height: 700px;
+            padding: 20px 30px 0px 30px;
+            overflow: auto;
+            
         }
+        #cadagarrafa{
+            display: flex;
+            flex: wrap;
+            margin: 0;
+            margin-left: -3px;
+            margin-top: 180px;
+        }
+        
+        .fotoloja {
+            background-color: #2E101F;
+            position: absolute;
+            border: 3px solid #2E101F;
+            left: 50%;
+            align-items: center;
+            object-fit: contain;
+            width: auto;
+            height: 720px;
+            z-index: -1;
+            padding-right: 100%;
+        
+        }
+
     </style>
 </head>
 
@@ -147,7 +167,7 @@
                 nacionais e internacionais.</p>
         </section>
 
-        <section>
+        <section class="background_vines">
             <img class="vineleft01" src="./src/assets/img/Home_page_imgs/grape_vine.jpg" alt="Grape vine">
             <img class="grapes" src="./src/assets/img/Home_page_imgs/grapes.jpg" alt="Grape vine">
             <img class="vineleft02" src="./src/assets/img/Home_page_imgs/grape_vine2.jpg" alt="Grape vine">
@@ -179,9 +199,8 @@
                 carinho, conhecimento e respeito pela arte de fazer vinho, seguimos trazendo o melhor da uva até você.
             </p>
             <img class="fotoloja" src="./src/assets/img/Home_page_imgs/Vinheria_placeholder_01.jpg"
-                    alt="Interior da Loja do Agnello">
-            <img class="fotoloja" src="./src/assets/img/Home_page_imgs/Vinheria_placeholder_01.jpg"
-                alt="Interior da Loja do Agnello">
+                        alt="Interior da Loja do Agnello">  
+            
 
         </section>
 

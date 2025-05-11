@@ -73,34 +73,47 @@ div section a {
     mix-blend-mode: difference;
 }
 
+.background_vines{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
 .vineleft01{
     mix-blend-mode: multiply;
     image-rendering: crisp-edges;
     opacity: 0.6;
-    width: 30%;
+    width: auto;
+    max-width: 40%;
+    height: 25%;
     margin-left: -5%;
     padding-bottom: 30px;
 }
 .grapes{
-    position: absolute;
+    position: inherit;
     mix-blend-mode: multiply;
     image-rendering: crisp-edges;
     opacity: 0.6;
     top: inherit;
     width: 20%;
-    margin-left: 15%;
+    justify-content: center;
     z-index: -1;
-
+    
+    
 }
 
 .vineleft02{
-    position: absolute;
+    position: inherit;
     mix-blend-mode: multiply;
     image-rendering: crisp-edges;
     opacity: 0.6;
-    width: 30%;
+    width: auto;
+    max-width: 40%;
+    height: 25%;
     overflow: hidden;
-    margin-left: 47%;
+    margin-right: -5%;
     padding-bottom: 30px;
 }
 
@@ -118,18 +131,7 @@ div section a {
     margin-bottom: 80px;
 }
 
-.fotoloja {
-    position: absolute;
-    display: inline;
-    border: 3px solid #2E101F;
-    margin-top: 100px;
-    left: 53%;
-    align-items: center;
-    object-fit: contain;
-    width: 45%;
-    height: auto;
-    z-index: -1;
-}
+
 
 .endingimg{
     position: static;
