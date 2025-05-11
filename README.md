@@ -56,6 +56,36 @@ Navegação para outras paginas no Header.
 
 ---
 
+## Efeitos Visuais
+
+### Pseudo-Classes
+Novas pseudo classes foram adicionados ao footer, ":nth-child" na lista mudando a cor do texto para dar uma pequena diferença (branco e cinza-claro). ":visited" e ":active" mudando a cor do texto para destacar ao usuario oque está fazendo e oque já fez.
+
+Um ":hover" foi adicionado a imagem no final da home page com uma transição lenta para aumentar a opacidade da imagem.
+
+Sem mencionar os ":hover" já existentes na header, no menu de navegação, junto de uma transição suave, alterando a cor e tamanho do texto. 
+
+### Pseudo-Elementos
+"::selection" foi adicionado a paginá inteira para ter cores que condizem com a do site, combinando mais com o site ao invés das cores padrões azul e branco.
+
+"::first-letter" foi utilizado na home-page para aumentar o tamanho da primeira letra de cada texto com um simples objetivo estético.
+
+
+### Animações
+@Keyframe animation adicionado na home page, após o primeiro texto as imagens dos galhos com uvas e a uva no centro foram animadas utilizando skew, translate e scale.
+
+Skew e translate nos galhos para parecerem que estão balançando com a base dos galhos relativamente fixos.
+
+Translate e Scale no cacho de uvas no centro para parecer que está flutuando ou até mesmo pulando. 
+
+
+### Transições
+Transições suaves adicionado no Header na barra de navegação, transição de 0.5s utilizando Hover na mudança de tamanho de cor e font-size do texto.
+
+Transição de 16s adicionado na imagem no final da home-page aumentando a opacidade da imagem, assim almentando o contraste da imagem.
+
+---
+
 ## Integrantes
 
 ### Miguel Manfré

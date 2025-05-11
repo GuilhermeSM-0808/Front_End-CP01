@@ -1,1 +1,39 @@
+@keyframes BranchAnimation01{
+    0%{transform: skew(0deg, 0deg);}
+    50%{transform: skew(-1deg, 2.5deg) translateY(8px);}
+    100%{transform: skew(0deg, 0deg);}
+}
+@keyframes BranchAnimation02{
+    0%{transform: skew(0deg, 0deg);}
+    50%{transform: skew(1deg, -2.5deg) translateY(8px);}
+    100%{transform: skew(0deg, 0deg);}
+}
+@keyframes Grapes{
+    0%{transform: translateY(0px) scale(1.035, 1) ;}
+    50%{transform: translateY(-25px) scale(1, 1.05) ;}
+    100%{transform: translateY(0px) scale(1.035, 1) ;}
+    
+}
 
+.vineleft01{
+    animation-name: BranchAnimation01;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.vineleft02{
+    animation-name: BranchAnimation02;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+.grapes{
+    animation-name: Grapes;
+    animation-delay: 3s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
