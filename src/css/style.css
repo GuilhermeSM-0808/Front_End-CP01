@@ -11,7 +11,14 @@ body{
     font-family: Arial, sans-serif;
     background: linear-gradient(150deg, #dabc7c, #501D2E);
     color: #333;
+
 }
+
+::selection{
+    background-color: #dabc7c;
+    color: #501D2E;
+}
+
 
 .logo{
     width: 32%;
@@ -52,6 +59,7 @@ header nav a{
     text-decoration: none;
     font-size: 20px;
     line-height: 150%;
+    transition: all 0.5s;
 }
 header nav a:hover{
     color: orange;
@@ -73,34 +81,47 @@ div section a {
     mix-blend-mode: difference;
 }
 
+.background_vines{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
 .vineleft01{
     mix-blend-mode: multiply;
     image-rendering: crisp-edges;
     opacity: 0.6;
-    width: 30%;
+    width: auto;
+    max-width: 40%;
+    height: 25%;
     margin-left: -5%;
     padding-bottom: 30px;
 }
 .grapes{
-    position: absolute;
+    position: inherit;
     mix-blend-mode: multiply;
     image-rendering: crisp-edges;
     opacity: 0.6;
     top: inherit;
     width: 20%;
-    margin-left: 15%;
+    justify-content: center;
     z-index: -1;
-
+    
+    
 }
 
 .vineleft02{
-    position: absolute;
+    position: inherit;
     mix-blend-mode: multiply;
     image-rendering: crisp-edges;
     opacity: 0.6;
-    width: 30%;
+    width: auto;
+    max-width: 40%;
+    height: 25%;
     overflow: hidden;
-    margin-left: 47%;
+    margin-right: -5%;
     padding-bottom: 30px;
 }
 
@@ -118,27 +139,23 @@ div section a {
     margin-bottom: 80px;
 }
 
-.fotoloja {
-    position: absolute;
-    display: inline;
-    border: 3px solid #2E101F;
-    margin-top: 100px;
-    left: 53%;
-    align-items: center;
-    object-fit: contain;
-    width: 45%;
-    height: auto;
-    z-index: -1;
-}
+
 
 .endingimg{
     position: static;
     mix-blend-mode: multiply;
-    opacity: 0.4;
+    opacity: 0.2;
     bottom: 0;
     width: 100%;
-    z-index: -2;
+    z-index: -1;
     overflow: hidden;
+    padding-top: 20px;
+    image-rendering: crisp-edges;
+    transition: all 16s;
+}
+
+.endingimg:hover{
+    opacity: 0.7;
 }
 
 footer{
@@ -161,12 +178,15 @@ footer .suporte li {
     justify-content: right;  
     bottom: 0; 
 } 
+footer .suporte li:nth-child(2n) {
+    color: lightgrey;
+} 
 
 .linkSup,
 .linkLocal{
     color: aliceblue;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 16px;
     line-height: 150%;
     font-family: Arial, sans-serif;
@@ -176,6 +196,16 @@ footer .suporte li {
 .linkSup:hover,
 .linkLocal:hover{
     color: orange;
+}
+
+.linkSup:visited,
+.linkLocal:visited{
+    color: #dabc7c;
+}
+
+.linkSup:active,
+.linkLocal:active{
+    color: rgb(153, 32, 48);
 }
 
 button {
