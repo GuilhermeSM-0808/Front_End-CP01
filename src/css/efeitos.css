@@ -26,21 +26,18 @@
 }
 .vineleft01{
     animation-name: BranchAnimation01;
-    animation-delay: 2s;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 .vineleft02{
     animation-name: BranchAnimation02;
-    animation-delay: 2s;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     }
 .grapes{
     animation-name: Grapes;
-    animation-delay: 3s;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -67,4 +64,11 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+.endingimg:hover{
+    transform: translateY(-100px) scale( 1.05) skewX(3deg);
+}
+header nav a:hover{
+    transform: scale(1.2) translateY(-5px);
 }
