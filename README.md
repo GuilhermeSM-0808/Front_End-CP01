@@ -83,9 +83,14 @@ Translate e Scale no cacho de uvas no centro para parecer que está flutuando ou
 
 
 ### Transições
-Transições suaves adicionado no Header na barra de navegação, transição de 0.5s utilizando Hover na mudança de tamanho de cor e font-size do texto.
+Transições suaves adicionado no Header na barra de navegação, transição de 0.5s utilizando Hover na mudança de cor e tamanho do texto.
 
-Transição de 16s adicionado na imagem no final da home-page aumentando a opacidade da imagem, assim almentando o contraste da imagem.
+Transição de 16s adicionado na imagem no final da home-page aumentando a opacidade da imagem, assim aumentando o contraste da imagem e translate, scale e skew. Com a simples intenacao de possuir um efeito visual.
+
+### Transformações
+Transform adicionado no logo para move-lo mais para o centro da tela e as opções de navegação na direita foram movidas um pouco mais para o centro e também "escalonados" com scale() para tornar o texto maior.
+
+
 
 ---
 
