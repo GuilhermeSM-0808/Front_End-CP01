@@ -77,12 +77,9 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-
 .endingimg:hover{
     transform: translateY(-100px) scale( 1.05) skewX(3deg);
 }
 header nav a:hover{
     transform: scale(1.2) translateY(-5px);
 }
-
-

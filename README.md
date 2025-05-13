@@ -94,11 +94,9 @@ Transição adicionada em cada vinho com barras vermelhas indo da direita para e
 Foi adicionado a transição rotateY() nos botoes na pagina 03 com ajuda de pseudo-elementos, como exemplo o hover
 
 Uma transição utlizando hover, onde vc passa o mouse por cima na tabela da pagina02  ele troca de cor em cada linha que vc passa o mouse.
+
 ### Transformações
 Transform adicionado no logo para move-lo mais para o centro da tela e as opções de navegação na direita foram movidas um pouco mais para o centro e também "escalonados" com scale() para tornar o texto maior.
-
-
-
 ---
 
 ## Integrantes
