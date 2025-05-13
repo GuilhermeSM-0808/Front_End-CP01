@@ -101,10 +101,10 @@ O arquivo `README.md` deve conter:
 
 ## ✅ Checklist do Check-point 02
 
-- [ ] Adição de pelo menos 3 pseudo-classes
-- [ ] Uso de pelo menos 2 pseudo-elementos
-- [ ] Animação com `@keyframes`
-- [ ] 2 transformações (`scale`, `rotate`, etc.)
-- [ ] Transições aplicadas em elementos interativos
-- [ ] `efeitos.css` criado e importado
-- [ ] `README.md` atualizado com seção de efeitos
+- [x] Adição de pelo menos 3 pseudo-classes
+- [x] Uso de pelo menos 2 pseudo-elementos
+- [x] Animação com `@keyframes`
+- [x] 2 transformações (`scale`, `rotate`, etc.)
+- [x] Transições aplicadas em elementos interativos
+- [x] `efeitos.css` criado e importado
+- [x] `README.md` atualizado com seção de efeitos

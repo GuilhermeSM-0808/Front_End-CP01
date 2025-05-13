@@ -11,10 +11,19 @@
 @keyframes Grapes{
     0%{transform: translateY(0px) scale(1.035, 1) ;}
     50%{transform: translateY(-25px) scale(1, 1.05) ;}
-    100%{transform: translateY(0px) scale(1.035, 1) ;}
-    
+    100%{transform: translateY(0px) scale(1.035, 1) ;}   
 }
-
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .vineleft01{
     animation-name: BranchAnimation01;
     animation-delay: 2s;
@@ -36,4 +45,26 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: reverse;
+}
+#preco:hover,
+#vendas:hover{
+    animation: pulse 0.5s infinite;
+}
+#vinhaDireita1,
+#vinhaDireita2,
+#vinhaDireita3{
+    animation-name: BranchAnimation01;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#vinhaEsquerda1,
+#vinhaEsquerda2,
+#vinhaEsquerda3{
+    animation-name: BranchAnimation02;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
