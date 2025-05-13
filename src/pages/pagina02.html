@@ -11,8 +11,20 @@
         content="Tabela completa de vinhos, com informações sobre tipo, país, descrição, vendas e preço, descubra os melhores vinhos nacionais e internacionais na loja de vinhos: Vinheria Agnello">
     <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/efeitos.css">
     <title>Vinharia Agnello - Recomendações</title>
     <style>
+        #corpoP2 {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            bottom: 0;
+            min-height: 100vh;
+        }
+    
         #principalR {
             display: flex;
             justify-content: center;
@@ -70,6 +82,10 @@
             padding: 5px 15px;
             margin-left: 10px;
             font-size: small;
+        }
+        #recomendacoes tbody tr:hover {
+            background-color: #f3e5d7;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -167,10 +183,10 @@
 
     <footer>
         <ul class="suporte">
-            <li>Contato: +55 (11) 94800-5562</li>
-            <li>E-mail: contato@agnello.com.br</li>
-            <li><a class="linkSup" href="./pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
-            <li><a class="linkLocal" href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
+            <li><a class="linkSup" href="../pages/pagina04.html">Contato:</a> +55 (11) 94800-5562</li>
+            <li><a class="linkSup" href="../pages/pagina04.html">E-mail:</a> contato@agnello.com.br</li>
+            <li><a class="linkSup" href="../pages/pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
+            <li><a class="linkLocal"href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
         </ul>
     </footer>
     <script>

@@ -11,7 +11,6 @@ body{
     font-family: Arial, sans-serif;
     background: linear-gradient(150deg, #dabc7c, #501D2E);
     color: #333;
-
 }
 
 ::selection{
@@ -27,6 +26,11 @@ body{
     height: 80px;
     width: auto;
     transform: translateX(50px);
+}
+
+.logo-container:hover img{
+    transition: scale 0.3s;
+    scale: 1.1;
 }
 
 header{
@@ -48,10 +52,8 @@ header h1{
     max-width: 32%;
 }
 header nav {
-    
     padding-right: 80px;
     transform: translateX(-20px) scale(1.1);
-    
 }
 header nav a{
     display: inline-block;

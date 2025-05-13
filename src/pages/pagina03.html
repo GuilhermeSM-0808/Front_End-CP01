@@ -5,32 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um pouco sobre nós e como é produzido o vinho.">
-    <meta name="keywords" content="vinhos, vinhedos, vinheria, loja, vendas, Loja Online, Loja de Vinhos, produção, uvas, uva">
+    <meta name="keywords"
+        content="vinhos, vinhedos, vinheria, loja, vendas, Loja Online, Loja de Vinhos, produção, uvas, uva">
     <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
     <title>Vinharia Agnello - Sobre</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/efeitos.css">
 
     <style>
-        html,
         body {
             height: 100%;
-            min-height: 440vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            padding: 0;
+            min-height: 270vh;
             bottom: 0;
-        }
-
-        main{
-            flex: 1;
+            margin: 0;
+            padding: 0;
         }
 
         #topoPag {
@@ -39,17 +27,18 @@
             font-size: 3rem;
             color: #501D2E;
         }
+
         .sobre-container {
             display: flex;
-            justify-content: center; 
-            align-items: center;    
-            gap: 40px;               
-            margin-top: 50px; 
-            flex-wrap: wrap;         
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap;
         }
 
         #imgPR,
-         #imgLJ {
+        #imgLJ {
             width: 400px;
             height: auto;
             margin-left: 40px;
@@ -67,6 +56,7 @@
             text-align: center;
             text-indent: 2em;
         }
+
         #nossaLoja {
             position: relative;
             left: 400px;
@@ -96,30 +86,12 @@
             align-items: center;
             text-align: center;
             background-color: #501D2E;
-            border-radius: 10px; 
+            border-radius: 10px;
             padding: 10px;
         }
 
-        #borda1 {
-            position: absolute;
-            width: 980px;
-            top: -315px;
-            left: -90px;
-            height: auto;
-            border-radius: 10px;
-            z-index: 1;
-        }
-
-        #borda2 {
-            position: absolute;
-            width: 980px;
-            top: -315px;
-            left: -90px;
-            height: auto;
-            border-radius: 10px;
-            z-index: 1;
-        }
-
+        #borda1,
+        #borda2,
         #borda3 {
             position: absolute;
             width: 980px;
@@ -127,7 +99,7 @@
             left: -90px;
             height: auto;
             border-radius: 10px;
-            z-index: 1;
+            z-index: 0;
         }
 
         #henriques {
@@ -140,7 +112,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .conteudoH p{
+        .conteudoH p {
             font-size: 1rem;
             color: white;
             font-family: Arial, sans-serif;
@@ -180,7 +152,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .conteudoMI p{
+        .conteudoMI p {
             font-size: 1rem;
             color: white;
             font-family: Arial, sans-serif;
@@ -206,7 +178,7 @@
 
         #saibaMais2:hover {
             transition: 1.5s;
-            transform: scale3d(1.1,1.1,1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
             background-color: #7A2F45;
         }
 
@@ -220,7 +192,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .conteudoMA p{
+        .conteudoMA p {
             font-size: 1rem;
             color: white;
             font-family: Arial, sans-serif;
@@ -243,13 +215,16 @@
             cursor: pointer;
             z-index: 2;
         }
+
         #saibaMais3:hover {
             transition: 2s;
             transform: rotateY(360deg);
             background-color: #7A2F45;
         }
 
-        #vinhaDireita1{
+        #vinhaDireita1,
+        #vinhaDireita2,
+        #vinhaDireita3 {
             position: absolute;
             display: inline-block;
             top: 110px;
@@ -259,36 +234,12 @@
             opacity: 0.6;
             width: 60%;
             overflow: hidden;
-            z-index: -1;
+            z-index: -2;
         }
 
-        #vinhaDireita2{
-            position: absolute;
-            display: inline-block;
-            top: 110px;
-            left: -570px;
-            mix-blend-mode: multiply;
-            image-rendering: crisp-edges;
-            opacity: 0.6;
-            width: 60%;
-            overflow: hidden;
-            z-index: -1;
-        }
-
-        #vinhaDireita3{
-            position: absolute;
-            display: inline-block;
-            top: 110px;
-            left: -570px;
-            mix-blend-mode: multiply;
-            image-rendering: crisp-edges;
-            opacity: 0.6;
-            width: 60%;
-            overflow: hidden;
-            z-index: -1;
-        }
-
-        #vinhaEsquerda1{
+        #vinhaEsquerda1,
+        #vinhaEsquerda2,
+        #vinhaEsquerda3 {
             position: absolute;
             display: inline-block;
             top: 110px;
@@ -298,33 +249,7 @@
             opacity: 0.6;
             width: 60%;
             overflow: hidden;
-            z-index: -1;
-        }
-
-        #vinhaEsquerda2{
-            position: absolute;
-            display: inline-block;
-            top: 110px;
-            right: -550px;
-            mix-blend-mode: multiply;
-            image-rendering: crisp-edges;
-            opacity: 0.6;
-            width: 60%;
-            overflow: hidden;
-            z-index: -1;
-        }
-
-        #vinhaEsquerda3{
-            position: absolute;
-            display: inline-block;
-            top: 110px;
-            right: -550px;
-            mix-blend-mode: multiply;
-            image-rendering: crisp-edges;
-            opacity: 0.6;
-            width: 60%;
-            overflow: hidden;
-            z-index: -1;
+            z-index: -2;
         }
 
         #textOP {
@@ -336,7 +261,6 @@
             text-align: center;
             color: #501D2E;
         }
-    
     </style>
 </head>
 
@@ -370,7 +294,8 @@
                         vasta gama de rótulos de vinícolas nacionais e internacionais. </p>
                     <p> Um dos pilares do mundo dos vinhos é a hora de escolher qual vinho pegar,
                         que é bastante vasto e diverso. O que torna bastante difícil a
-                        tomada de decisão na hora da compra? São cerca de 6.000 variedades de uvas viníferas no mundo, que adquirem
+                        tomada de decisão na hora da compra? São cerca de 6.000 variedades de uvas viníferas no mundo,
+                        que adquirem
                         características e sabores diferentes de acordo com a região, o clima, o solo e os
                         cuidados em seu cultivo, sem contar com as diferentes técnicas de colheita,
                         fermentação, processamento e armazenagem, que levam à produção de uma
@@ -404,7 +329,8 @@
                         Temos os Henriques & Henriques medium rich madeira e full rich madeira.</p>
                     <a href="https://www.youtube.com/watch?v=nD3qb__Og_0"><button id="saibaMais1">SaibaMais</button></a>
                 </div>
-                <div><img id="vinhaEsquerda1" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda"></div>
+                <div><img id="vinhaEsquerda1" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda">
+                </div>
             </div>
 
             <div class="vinho">
@@ -425,7 +351,8 @@
                         que impressiona pela sofisticação e equilíbrio. Temos ambos os vinhos.</p>
                     <a href="https://www.youtube.com/watch?v=TWkhZ3tKsYM"><button id="saibaMais2">SaibaMais</button></a>
                 </div>
-                <div><img id="vinhaEsquerda2" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda"></div>
+                <div><img id="vinhaEsquerda2" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda">
+                </div>
             </div>
 
             <div class="vinho">
@@ -446,16 +373,17 @@
                         volumoso, fresco e elegante, culminando em um final persistente.</p>
                     <a href="https://www.youtube.com/watch?v=akwWMjDz8VQ"><button id="saibaMais3">SaibaMais</button></a>
                 </div>
-                <div><img id="vinhaEsquerda3" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda"></div>
+                <div><img id="vinhaEsquerda3" src="../assets/img/Home_page_imgs/grape_vine2.jpg" alt="vinhaEsquerda">
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <ul class="suporte">
-            <li>Contato: +55 (11) 94800-5562</li>
-            <li>E-mail: contato@agnello.com.br</li>
-            <li><a class="linkSup" href="./pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
+            <li><a class="linkSup" href="../pages/pagina04.html">Contato:</a> +55 (11) 94800-5562</li>
+            <li><a class="linkSup" href="../pages/pagina04.html">E-mail:</a> contato@agnello.com.br</li>
+            <li><a class="linkSup" href="../pages/pagina04.html">Suporte:</a> suporte@agnello.com.br</li>
             <li><a class="linkLocal" href="http://www.fiap.com.br">Localização:</a> Av. Paulista, 1106 - 7º andar</li>
         </ul>
     </footer>

@@ -4,16 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" 
-    content="vinhos, vinheria, catálogo, vinho tinto, vinho branco, espumante, doce, rosé">
+  <meta name="keywords" content="vinhos, vinheria, catálogo, vinho tinto, vinho branco, espumante, doce, rosé">
   <meta name="description"
     content="Catálogo completo da Vinheria Agnello com vinhos tintos, brancos, rosés, espumantes e doces. Experimente o melhor da enologia.">
   <meta name="author" content="Vinheria Agnello">
   <link rel="shortcut icon" href="../assets/img/loguinho2.png" type="image/x-icon">
   <link rel="stylesheet" href="./../css/style.css">
+  <link rel="stylesheet" href="./../css/efeitos.css">
 
   <title>Vinheria Agnello - Catálogo</title>
   <style>
+    .vinho {
+      opacity: 0;
+      animation: surgir 0.6s ease forwards;
+    }
+
+    .vinho:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .vinho:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .vinho:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .vinho:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .vinho:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .vinho:nth-child(6) {
+      animation-delay: 0.1s;
+    }
+
+    .vinho:nth-child(7) {
+      animation-delay: 0.2s;
+    }
+
+    .vinho:nth-child(8) {
+      animation-delay: 0.3s;
+    }
+
+    .vinho:nth-child(9) {
+      animation-delay: 0.4s;
+    }
+
+    .vinho:nth-child(10) {
+      animation-delay: 0.5s;
+    }
 
     body {
       font-family: Arial, sans-serif;
@@ -121,6 +165,46 @@
       padding: 6px 10px;
       border-radius: 6px;
       border: 1px solid #ccc;
+    }
+
+    .vinho {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      transform-style: preserve-3d;
+    }
+
+    .vinho:hover {
+      transform: scale(1.05) rotateZ(1deg);
+      box-shadow: 0 0 15px rgba(172, 11, 11, 0.822);
+    }
+
+    .vinho::before,
+    .vinho::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, #800000, #b12704);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .vinho::before {
+      top: 0;
+      left: 0;
+      transform-origin: left;
+    }
+
+    .vinho::after {
+      bottom: 0;
+      right: 0;
+      transform-origin: right;
+    }
+
+    .vinho:hover::before,
+    .vinho:hover::after {
+      transform: scaleX(1);
     }
   </style>
 </head>

@@ -77,21 +77,26 @@ Sem mencionar os ":hover" já existentes na header, no menu de navegação, junt
 ### Animações
 @Keyframe animation adicionado na home page, após o primeiro texto as imagens dos galhos com uvas e a uva no centro foram animadas utilizando skew, translate e scale.
 
+@Keyframe animation adicionado no catálogo dos vinhos com efeito de surgimento
+
 Skew e translate nos galhos para parecerem que estão balançando com a base dos galhos relativamente fixos.
 
 Translate e Scale no cacho de uvas no centro para parecer que está flutuando ou até mesmo pulando. 
 
-
+Adição na pagina02 animações para o botão de ordenar preço e ordenar vendas, chamado pulse, que quando passa o mouse por cima ele fica pulsando
 ### Transições
 Transições suaves adicionado no Header na barra de navegação, transição de 0.5s utilizando Hover na mudança de cor e tamanho do texto.
 
 Transição de 16s adicionado na imagem no final da home-page aumentando a opacidade da imagem, assim aumentando o contraste da imagem e translate, scale e skew. Com a simples intenacao de possuir um efeito visual.
 
+Transição adicionada em cada vinho com barras vermelhas indo da direita para esquerda em cima e embaixo
+
+Foi adicionado a transição rotateY() nos botoes na pagina 03 com ajuda de pseudo-elementos, como exemplo o hover
+
+Uma transição utlizando hover, onde vc passa o mouse por cima na tabela da pagina02  ele troca de cor em cada linha que vc passa o mouse.
+
 ### Transformações
 Transform adicionado no logo para move-lo mais para o centro da tela e as opções de navegação na direita foram movidas um pouco mais para o centro e também "escalonados" com scale() para tornar o texto maior.
-
-
-
 ---
 
 ## Integrantes
